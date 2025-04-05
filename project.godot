@@ -12,7 +12,7 @@ config_version=5
 
 config/name="depth jumper"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="res://sprites/icon.svg"
+config/icon="res://sprites fr/icon.svg"
 
 [autoload]
 
