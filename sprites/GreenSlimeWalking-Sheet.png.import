@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dml0u62wixrrl"
-path="res://.godot/imported/GreenSlimeAttack-Sheet.png-1f9198dbe2efda860229d3578296bfc0.ctex"
+uid="uid://cx1bop582ihwn"
+path="res://.godot/imported/GreenSlimeWalking-Sheet.png-3e464c5f64cdf814b4cbce1524e39785.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/spirites/GreenSlimeAttack-Sheet.png"
-dest_files=["res://.godot/imported/GreenSlimeAttack-Sheet.png-1f9198dbe2efda860229d3578296bfc0.ctex"]
+source_file="res://sprites/GreenSlimeWalking-Sheet.png"
+dest_files=["res://.godot/imported/GreenSlimeWalking-Sheet.png-3e464c5f64cdf814b4cbce1524e39785.ctex"]
 
 [params]
 

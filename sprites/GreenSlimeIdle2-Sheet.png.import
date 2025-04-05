@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1stfjp73biiy"
-path="res://.godot/imported/GreenSlimeIdle2-Sheet.png-f6f5955494c852d2df0b7ecf7e16a938.ctex"
+path="res://.godot/imported/GreenSlimeIdle2-Sheet.png-aecb83603f5ae95843bf11deff247f39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/spirites/GreenSlimeIdle2-Sheet.png"
-dest_files=["res://.godot/imported/GreenSlimeIdle2-Sheet.png-f6f5955494c852d2df0b7ecf7e16a938.ctex"]
+source_file="res://sprites/GreenSlimeIdle2-Sheet.png"
+dest_files=["res://.godot/imported/GreenSlimeIdle2-Sheet.png-aecb83603f5ae95843bf11deff247f39.ctex"]
 
 [params]
 
