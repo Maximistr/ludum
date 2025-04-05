@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5plqrnktp5bf"
-path="res://.godot/imported/GreenSlimeIdle-Sheet.png-1cadac4c51c546e0d775398264cf538e.ctex"
+uid="uid://6pga8o1c0q0l"
+path="res://.godot/imported/GreenSlimeHurt-Sheet.png-95703bd4fdad9a551ec6c764a793b9db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GreenSlime/GreenSlimeIdle-Sheet.png"
-dest_files=["res://.godot/imported/GreenSlimeIdle-Sheet.png-1cadac4c51c546e0d775398264cf538e.ctex"]
+source_file="res://sprites/GreenSlime/GreenSlimeHurt-Sheet.png"
+dest_files=["res://.godot/imported/GreenSlimeHurt-Sheet.png-95703bd4fdad9a551ec6c764a793b9db.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bp6fqs0rw0iau"
-path="res://.godot/imported/GreenSlimeJump-Sheet.png-a8195e5be346fac12c6221619c8e6d05.ctex"
+uid="uid://ksh0ofld2l62"
+path="res://.godot/imported/Jellyfish Sprite Sheet.png-26609b41b81f01a3008fd7de07e4c666.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GreenSlime/GreenSlimeJump-Sheet.png"
-dest_files=["res://.godot/imported/GreenSlimeJump-Sheet.png-a8195e5be346fac12c6221619c8e6d05.ctex"]
+source_file="res://sprites/Jellyfish Sprite Sheet.png"
+dest_files=["res://.godot/imported/Jellyfish Sprite Sheet.png-26609b41b81f01a3008fd7de07e4c666.ctex"]
 
 [params]
 
