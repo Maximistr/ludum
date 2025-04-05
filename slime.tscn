@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://cdpxvdeiv0xb7"]
+[gd_scene load_steps=28 format=3 uid="uid://b5vpg1ccbek7i"]
 
 [ext_resource type="Script" uid="uid://c42mvg5fxrvyn" path="res://slime.gd" id="1_bratd"]
 [ext_resource type="Texture2D" uid="uid://bu8lxgllfqeg3" path="res://sprites/Real sprites/GreenSlimeIdle-Sheet.png" id="1_jayke"]
@@ -153,8 +153,8 @@ radius = 3.0
 height = 20.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2002g"]
-radius = 6.66668
-height = 21.3333
+radius = 8.33335
+height = 24.0
 
 [node name="Slime" type="CharacterBody2D"]
 position = Vector2(94, 40)
@@ -210,6 +210,7 @@ debug_color = Color(0.992157, 0, 0, 0.419608)
 position = Vector2(0, 11.3333)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_2002g")
+disabled = true
 
 [connection signal="area_entered" from="early" to="." method="_on_early_area_entered"]
 [connection signal="area_exited" from="early" to="." method="_on_early_area_exited"]
@@ -217,3 +218,4 @@ shape = SubResource("CapsuleShape2D_2002g")
 [connection signal="area_exited" from="crit" to="." method="_on_crit_area_exited"]
 [connection signal="area_entered" from="late" to="." method="_on_late_area_entered"]
 [connection signal="area_exited" from="late" to="." method="_on_late_area_exited"]
+[connection signal="area_entered" from="jelly" to="." method="_on_jelly_area_entered"]

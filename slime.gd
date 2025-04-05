@@ -26,19 +26,16 @@ func _physics_process(delta: float) -> void:
 		
 	if Input.is_action_just_pressed("atk") and hit_val > 0 and not is_on_floor():
 		velocity.y = 0
-		var kill = $jelly.get_overlapping_areas()
-		kill[0].death()
+		$"jelly/na židy".disabled = false
 		if hit_val == 2:
 			velocity.y += JUMP_VELOCITY * 1.2
 		else:
 			velocity.y += JUMP_VELOCITY
 		print(hit_val)
 		hit_val = 0
-	print(upg)
-		
 	if Input.is_action_just_pressed("1"):
 		upg[5] = 1
-		
+
 	if Input.is_action_just_pressed("atk") and is_on_floor():
 		velocity.y = JUMP_VELOCITY + 50
 	
@@ -58,7 +55,11 @@ func _on_late_area_exited(area: Area2D) -> void:
 	if area.name == "sus":
 		hit_val = 0
 
-	
-
 func death():
 	pass
+
+func _on_jelly_area_entered(area: Area2D) -> void:
+	var e = area.get_parent()
+	e.death()
+	await get_tree().create_timer(0.1).timeout
+	$"jelly/na židy".disabled = true
