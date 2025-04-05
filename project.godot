@@ -16,7 +16,7 @@ config/icon="res://sprites/icon.svg"
 
 [autoload]
 
-Variables="*res://Variables.gd"
+Variables="*res://scripts/Variables.gd"
 
 [rendering]
 
