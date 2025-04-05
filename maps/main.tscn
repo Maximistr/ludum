@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dcj8gihnni8ja" path="res://sprites/Scaffolding_and_BG_Parts (16 x 16).png" id="3_7l0te"]
 [ext_resource type="Texture2D" uid="uid://c40cx12bsyf37" path="res://sprites/obrázek_2025-04-05_134238607-removebg-preview.png" id="4_f17hd"]
 [ext_resource type="FontFile" uid="uid://do55hx6mfsraq" path="res://MinecraftRegular-Bmg3.otf" id="5_qpamc"]
-[ext_resource type="Script" path="res://scripts/spike.gd" id="6_xo82f"]
+[ext_resource type="Script" uid="uid://b8mt5ik1b6pg4" path="res://scripts/spike.gd" id="6_xo82f"]
 [ext_resource type="Texture2D" uid="uid://dbyvaa2quhcnr" path="res://sprites/16-bit-spike-Sheet.png" id="7_ag2ss"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kp651"]
