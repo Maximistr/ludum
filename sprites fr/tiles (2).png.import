@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c40cx12bsyf37"
-path="res://.godot/imported/obrázek_2025-04-05_134238607-removebg-preview.png-912fa345654b547e8eeb9b02f1ac2152.ctex"
+uid="uid://cy0ipev57nefs"
+path="res://.godot/imported/tiles (2).png-bd42d7fa11f8086dcb4ecae0a0b157af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/obrázek_2025-04-05_134238607-removebg-preview.png"
-dest_files=["res://.godot/imported/obrázek_2025-04-05_134238607-removebg-preview.png-912fa345654b547e8eeb9b02f1ac2152.ctex"]
+source_file="res://sprites fr/tiles (2).png"
+dest_files=["res://.godot/imported/tiles (2).png-bd42d7fa11f8086dcb4ecae0a0b157af.ctex"]
 
 [params]
 

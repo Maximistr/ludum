@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://23na5xqetngq"
-path="res://.godot/imported/Brown_Tile_Terrain (16 x 16).png-7e00370438cb8745743c936366cec23e.ctex"
+uid="uid://c40cx12bsyf37"
+path="res://.godot/imported/obrázek_2025-04-05_134238607-removebg-preview.png-8be7de41dc317b6f9d2ed6c4b80bd73c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Brown_Tile_Terrain (16 x 16).png"
-dest_files=["res://.godot/imported/Brown_Tile_Terrain (16 x 16).png-7e00370438cb8745743c936366cec23e.ctex"]
+source_file="res://sprites fr/obrázek_2025-04-05_134238607-removebg-preview.png"
+dest_files=["res://.godot/imported/obrázek_2025-04-05_134238607-removebg-preview.png-8be7de41dc317b6f9d2ed6c4b80bd73c.ctex"]
 
 [params]
 

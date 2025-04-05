@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://ce52prsg1ikcx"]
 
 [ext_resource type="Script" uid="uid://b8mt5ik1b6pg4" path="res://scripts/spike.gd" id="1_mmppg"]
-[ext_resource type="Texture2D" uid="uid://dbyvaa2quhcnr" path="res://sprites/16-bit-spike-Sheet.png" id="2_mymif"]
+[ext_resource type="Texture2D" uid="uid://dbyvaa2quhcnr" path="res://sprites fr/16-bit-spike-Sheet.png" id="2_mymif"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_njafj"]
 radius = 3.5

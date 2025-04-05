@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbyvaa2quhcnr"
-path="res://.godot/imported/16-bit-spike-Sheet.png-7f77f58a04dcd0dc68de75c5a7bab08d.ctex"
+uid="uid://dcj8gihnni8ja"
+path="res://.godot/imported/Scaffolding_and_BG_Parts (16 x 16).png-252956ddbcdecfced1fc87b32baaf851.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/16-bit-spike-Sheet.png"
-dest_files=["res://.godot/imported/16-bit-spike-Sheet.png-7f77f58a04dcd0dc68de75c5a7bab08d.ctex"]
+source_file="res://sprites fr/Scaffolding_and_BG_Parts (16 x 16).png"
+dest_files=["res://.godot/imported/Scaffolding_and_BG_Parts (16 x 16).png-252956ddbcdecfced1fc87b32baaf851.ctex"]
 
 [params]
 
