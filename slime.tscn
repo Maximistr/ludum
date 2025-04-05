@@ -1,6 +1,6 @@
-[gd_scene load_steps=28 format=3 uid="uid://b5vpg1ccbek7i"]
+[gd_scene load_steps=28 format=3 uid="uid://dns21btkxcevi"]
 
-[ext_resource type="Script" uid="uid://c42mvg5fxrvyn" path="res://slime.gd" id="1_bratd"]
+[ext_resource type="Script" path="res://slime.gd" id="1_bratd"]
 [ext_resource type="Texture2D" uid="uid://bu8lxgllfqeg3" path="res://sprites/Real sprites/GreenSlimeIdle-Sheet.png" id="1_jayke"]
 [ext_resource type="Texture2D" uid="uid://bpknm4285wfnq" path="res://sprites/Real sprites/GreenSlimeJump-Sheet.png" id="2_2002g"]
 [ext_resource type="Texture2D" uid="uid://0ykxgammdsi5" path="res://sprites/Real sprites/GreenSlimeHurt-Sheet.png" id="3_bratd"]
@@ -157,7 +157,7 @@ radius = 8.33335
 height = 24.0
 
 [node name="Slime" type="CharacterBody2D"]
-position = Vector2(94, 40)
+position = Vector2(95, 40)
 scale = Vector2(3, 3)
 script = ExtResource("1_bratd")
 
