@@ -24,3 +24,7 @@ func _physics_process(delta: float) -> void:
 		e = true
 
 	move_and_slide()
+
+
+func _on_body_area_body_entered(body: Node2D) -> void:
+	body.death()

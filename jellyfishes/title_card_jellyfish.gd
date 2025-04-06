@@ -4,7 +4,7 @@ var g = true
 
 func death():
 	$sus.monitorable = false 
-	$body_area.monitoring = false 
+	$Hit_area.monitoring = false 
 	$Sprite.play("death")
 	await get_tree().create_timer(0.8).timeout
 	queue_free()
@@ -26,4 +26,7 @@ func _process(delta: float) -> void:
 		$Sprite.modulate.a -= 0.5 * delta
 	if g == false:
 		$Sprite.modulate.a += 0.5 * delta
-	
+
+
+func _on_hit_area_body_entered(body: Node2D) -> void:
+	body.death()
