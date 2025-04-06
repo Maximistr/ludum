@@ -7,7 +7,6 @@ var hit_val = 0
 var upg = []
 
 func _physics_process(delta: float) -> void:
-
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 		$Sprite.play("jump")
@@ -23,10 +22,19 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("atk"):
 		$attack.play("default")
 		
+	if $early.has_overlapping_areas() == true:
+		hit_val = 1
+	if  $crit.has_overlapping_areas() == true:
+		hit_val = 2
+	if $late.has_overlapping_areas() == true:
+		hit_val = 3
+	if $early.has_overlapping_areas() == false and $crit.has_overlapping_areas() == false and $late.has_overlapping_areas() == false:
+		hit_val = 0
+		
 		
 	if Input.is_action_just_pressed("atk") and hit_val > 0 and not is_on_floor():
 		velocity.y = 0
-		$jelly/col_kill.disabled = false
+		kill()
 		if hit_val == 2:
 			velocity.y += JUMP_VELOCITY * 1.2
 		else:
@@ -41,25 +49,15 @@ func _physics_process(delta: float) -> void:
 	
 	move_and_slide()
 
-
-func _on_early_area_entered(area: Area2D) -> void:
-	if area.name == "sus":
-		hit_val = 1
-func _on_crit_area_entered(area: Area2D) -> void:
-	if area.name == "sus":
-		hit_val = 2
-func _on_late_area_entered(area: Area2D) -> void:
-	if area.name == "sus":
-		hit_val = 3
-func _on_late_area_exited(area: Area2D) -> void:
-	if area.name == "sus":
-		hit_val = 0
-
 func death():
 	pass
 
 func _on_jelly_area_entered(area: Area2D) -> void:
-	var e = area.get_parent()
+	var e = area#.get_parent()
 	e.death()
+
+	
+func kill():
+	$jelly/col_kill.disabled = false
 	await get_tree().create_timer(0.1).timeout
 	$jelly/col_kill.disabled = true

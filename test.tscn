@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://6y41prgfn5vg"]
+
+[ext_resource type="Script" uid="uid://cwqvuc08q1e1p" path="res://test.gd" id="1_6uqi0"]
+[ext_resource type="PackedScene" uid="uid://d0ecnirlnlwsh" path="res://sus.tscn" id="1_8uh7m"]
+[ext_resource type="PackedScene" uid="uid://bb866cijtkecb" path="res://slime.tscn" id="2_6uqi0"]
+
+[node name="test" type="Node"]
+script = ExtResource("1_6uqi0")
+
+[node name="sus" parent="." instance=ExtResource("1_8uh7m")]
+position = Vector2(174, 554)
+
+[node name="sus2" parent="." instance=ExtResource("1_8uh7m")]
+position = Vector2(317, 460)
+
+[node name="sus3" parent="." instance=ExtResource("1_8uh7m")]
+position = Vector2(482, 373)
+
+[node name="sus4" parent="." instance=ExtResource("1_8uh7m")]
+position = Vector2(639, 460)
+
+[node name="sus5" parent="." instance=ExtResource("1_8uh7m")]
+position = Vector2(790, 541)
+
+[node name="sus6" parent="." instance=ExtResource("1_8uh7m")]
+position = Vector2(946, 449)
+
+[node name="sus7" parent="." instance=ExtResource("1_8uh7m")]
+position = Vector2(1031, 330)
+
+[node name="sus8" parent="." instance=ExtResource("1_8uh7m")]
+position = Vector2(928, 174)
+
+[node name="sus9" parent="." instance=ExtResource("1_8uh7m")]
+position = Vector2(801, 256)
+
+[node name="sus10" parent="." instance=ExtResource("1_8uh7m")]
+position = Vector2(691, 187)
+
+[node name="sus11" parent="." instance=ExtResource("1_8uh7m")]
+position = Vector2(360, 180)
+
+[node name="Slime" parent="." instance=ExtResource("2_6uqi0")]
+position = Vector2(155, -71)
