@@ -25,13 +25,6 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		
-	if direction == -1:
-		$attack.flip_v = true
-		$Sprite.flip_h = false
-	if direction == 1:
-		$attack.flip_v = false
-		$Sprite.flip_h = true
-		
 	if Input.is_action_just_pressed("atk") and can_do == true:
 		$attack.play("default")
 		
@@ -74,7 +67,5 @@ func _on_jelly_area_entered(area: Area2D) -> void:
 	
 func kill():
 	$jelly/col_kill.disabled = false
-	await get_tree().create_timer(0.05).timeout
+	await get_tree().create_timer(0.1).timeout
 	$jelly/col_kill.disabled = true
-	
-	
