@@ -11,8 +11,10 @@ config_version=5
 [application]
 
 config/name="depth jumper"
+run/main_scene="res://assetc/green_jelly.tscn"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://sprites fr/icon.svg"
+<<<<<<<HEADrun/main_scene="res://jellyfishes/green_jelly.tscn"
 
 [autoload]
 
