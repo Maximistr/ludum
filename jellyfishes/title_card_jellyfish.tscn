@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=3 uid="uid://4h7boi23c677"]
 
-[ext_resource type="Script" path="res://jellyfishes/title_card_jellyfish.gd" id="1_x0q3f"]
+[ext_resource type="Script" uid="uid://cp6creqnuq0nl" path="res://jellyfishes/title_card_jellyfish.gd" id="1_x0q3f"]
 [ext_resource type="Texture2D" uid="uid://8ipu523qa83j" path="res://jellyfishes/pixil-frame-0.png" id="2_h8v2e"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eunsk"]

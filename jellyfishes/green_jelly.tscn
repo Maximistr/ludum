@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=3 uid="uid://da6f08khtbfro"]
 
-[ext_resource type="Script" path="res://jellyfishes/green_jelly.gd" id="1_2usmx"]
+[ext_resource type="Script" uid="uid://da5jq8ynrkqfj" path="res://jellyfishes/green_jelly.gd" id="1_2usmx"]
 [ext_resource type="Texture2D" uid="uid://ng7flefom06u" path="res://jellyfishes/greenjellyfish.png" id="1_sy1d6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rba52"]
