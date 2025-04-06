@@ -284,7 +284,6 @@ size = Vector2(7, 23)
 size = Vector2(20.6667, 29)
 
 [node name="Slime" type="CharacterBody2D"]
-position = Vector2(95, 40)
 scale = Vector2(3, 3)
 script = ExtResource("1_bratd")
 

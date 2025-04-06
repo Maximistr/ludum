@@ -322,9 +322,9 @@ anchors_preset = -1
 anchor_top = -0.059
 anchor_bottom = -0.059
 offset_left = 110.0
-offset_top = 72.965
+offset_top = 80.965
 offset_right = 31585.0
-offset_bottom = 14786.0
+offset_bottom = 17497.0
 rotation = 3.14159
 scale = Vector2(0.003, 0.003)
 theme_override_colors/font_color = Color(0.580392, 0.239216, 0, 1)
@@ -359,6 +359,18 @@ shape = SubResource("RectangleShape2D_7vtfy")
 [node name="Slime" parent="." instance=ExtResource("4_72qrf")]
 position = Vector2(406, 532)
 
+[node name="Label" type="Label" parent="Slime"]
+offset_left = -128.0
+offset_top = -72.0
+offset_right = 51072.0
+offset_bottom = 6795.0
+scale = Vector2(0.005, 0.005)
+theme_override_fonts/font = ExtResource("3_mg60w")
+theme_override_font_sizes/font_size = 3000
+text = "5000m"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Level_spawner" type="Node2D" parent="."]
 
 [node name="start_jump" type="Area2D" parent="."]
@@ -374,3 +386,6 @@ offset_top = -63.0
 offset_right = 28.0
 offset_bottom = 1.0
 texture = ExtResource("7_3oufs")
+
+[node name="base_height" type="Node2D" parent="."]
+position = Vector2(572, 576)
