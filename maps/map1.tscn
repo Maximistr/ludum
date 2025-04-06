@@ -742,25 +742,25 @@ position = Vector2(412, 1085)
 position = Vector2(581, 946)
 
 [node name="PinkJelly6" parent="." instance=ExtResource("6_nxseg")]
-position = Vector2(420, 838)
+position = Vector2(418, 810)
 
 [node name="PinkJelly7" parent="." instance=ExtResource("6_nxseg")]
-position = Vector2(570, 713)
+position = Vector2(578, 700)
 
 [node name="PinkJelly8" parent="." instance=ExtResource("6_nxseg")]
-position = Vector2(654, 574)
+position = Vector2(654, 563)
 
 [node name="PinkJelly9" parent="." instance=ExtResource("6_nxseg")]
-position = Vector2(480, 512)
+position = Vector2(469, 482)
 
 [node name="PinkJelly10" parent="." instance=ExtResource("6_nxseg")]
 position = Vector2(560, 353)
 
 [node name="PinkJelly11" parent="." instance=ExtResource("6_nxseg")]
-position = Vector2(428, 309)
+position = Vector2(411, 307)
 
 [node name="PinkJelly12" parent="." instance=ExtResource("6_nxseg")]
-position = Vector2(629, 200)
+position = Vector2(648, 200)
 
 [node name="PinkJelly13" parent="." instance=ExtResource("6_nxseg")]
 position = Vector2(447, 94)
