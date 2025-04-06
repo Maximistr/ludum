@@ -1,11 +1,10 @@
-[gd_scene load_steps=45 format=3 uid="uid://4thshidoeu1a"]
+[gd_scene load_steps=45 format=3 uid="uid://dkky68h3g8f4h"]
 
 [ext_resource type="Texture2D" uid="uid://okhgsgml3nyd" path="res://slime_sprites/GreenSlimeDie-Sheet.png" id="1_5jc4t"]
 [ext_resource type="Script" uid="uid://pi4qp0rle2ii" path="res://slime.gd" id="1_bratd"]
 [ext_resource type="Texture2D" uid="uid://c0l5yx2fotx7u" path="res://slime_sprites/GreenSlimeBorn-Sheet.png" id="2_4l1t8"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2d52u"]
-load_path = "res://.godot/imported/GreenSlimeIdle-Sheet.png-b119f622ceac451b81a3446f737810b1.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jrxk1"]
 atlas = SubResource("CompressedTexture2D_2d52u")
@@ -341,6 +340,9 @@ position = Vector2(-0.166677, 13.1666)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_da4t2")
 disabled = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.5, 1.5)
 
 [connection signal="area_entered" from="early" to="." method="_on_early_area_entered"]
 [connection signal="area_exited" from="early" to="." method="_on_early_area_exited"]
