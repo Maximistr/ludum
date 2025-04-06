@@ -263,12 +263,12 @@ animations = [{
 }],
 "loop": false,
 "name": &"default",
-"speed": 8.5
+"speed": 12.0
 }, {
 "frames": [],
 "loop": true,
 "name": &"new_animation",
-"speed": 5.0
+"speed": 6.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2002g"]
@@ -281,7 +281,7 @@ size = Vector2(3.66667, 19.6667)
 size = Vector2(7, 23)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_da4t2"]
-size = Vector2(23.6667, 29.6667)
+size = Vector2(16.3333, 24.3333)
 
 [node name="Slime" type="CharacterBody2D"]
 position = Vector2(95, 40)
@@ -302,8 +302,9 @@ position = Vector2(23.5669, 3.84896)
 rotation = 1.5708
 scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_d8dsn")
-animation = &"new_animation"
 autoplay = "new_animation"
+frame = 2
+frame_progress = 1.0
 offset = Vector2(-3.84896, 19.9002)
 
 [node name="early" type="Area2D" parent="."]
@@ -336,7 +337,7 @@ debug_color = Color(0.992157, 0, 0, 0.419608)
 [node name="jelly" type="Area2D" parent="."]
 
 [node name="col_kill" type="CollisionShape2D" parent="jelly"]
-position = Vector2(-0.166677, 13.1666)
+position = Vector2(0.5, 13.5)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_da4t2")
 disabled = true

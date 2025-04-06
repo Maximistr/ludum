@@ -12,6 +12,7 @@ size = Vector2(14, 5)
 
 [node name="spike" type="Area2D"]
 scale = Vector2(2, 2)
+collision_layer = 0
 script = ExtResource("1_mmppg")
 
 [node name="texture_spike" type="TextureRect" parent="."]
