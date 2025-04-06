@@ -29,4 +29,5 @@ func _process(delta: float) -> void:
 
 
 func _on_hit_area_body_entered(body: Node2D) -> void:
-	body.death()
+	if body.name == "Slime":
+		body.death()

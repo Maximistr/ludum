@@ -8,4 +8,5 @@ func death():
 	queue_free()
 
 func _on_body_area_body_entered(body: Node2D) -> void:
-	body.death()
+	if body.name == "Slime":
+		body.death()
