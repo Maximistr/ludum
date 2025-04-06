@@ -141,13 +141,13 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2002g"]
-size = Vector2(2.66667, 11)
+size = Vector2(4.33334, 16.3333)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bratd"]
-size = Vector2(2.66667, 17)
+size = Vector2(3.66667, 19.6667)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5b0gg"]
-size = Vector2(6.66667, 20)
+size = Vector2(7, 23)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_da4t2"]
 size = Vector2(20, 29.6667)
@@ -167,8 +167,9 @@ position = Vector2(0, -1)
 shape = SubResource("CapsuleShape2D_uekmf")
 
 [node name="attack" type="AnimatedSprite2D" parent="."]
-position = Vector2(19.9002, 3.84896)
+position = Vector2(23.5669, 3.84896)
 rotation = 1.5708
+scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_d8dsn")
 autoplay = "default"
 offset = Vector2(-3.84896, 19.9002)
@@ -177,7 +178,7 @@ offset = Vector2(-3.84896, 19.9002)
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="early"]
-position = Vector2(-0.5, 16.6667)
+position = Vector2(-0.5, 18.8333)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_2002g")
 debug_color = Color(1, 0, 0, 0.419608)
@@ -186,7 +187,7 @@ debug_color = Color(1, 0, 0, 0.419608)
 monitorable = false
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="crit"]
-position = Vector2(0.166666, 14)
+position = Vector2(-0.166664, 14.8333)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_bratd")
 debug_color = Color(1, 1, 0, 0.419608)
@@ -195,7 +196,7 @@ debug_color = Color(1, 1, 0, 0.419608)
 monitorable = false
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="late"]
-position = Vector2(-5.72205e-06, 9.33333)
+position = Vector2(0.5, 9.5)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_5b0gg")
 debug_color = Color(0.992157, 0, 0, 0.419608)
