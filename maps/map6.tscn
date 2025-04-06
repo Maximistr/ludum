@@ -2,10 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://dbr4h0keagch5" path="res://assetc/M.sides.tscn" id="1_s2tjg"]
 [ext_resource type="PackedScene" uid="uid://ce52prsg1ikcx" path="res://assetc/spike.tscn" id="2_jvgsk"]
-[ext_resource type="PackedScene" path="res://assetc/title_card_jellyfish.tscn" id="3_lbm1g"]
-[ext_resource type="PackedScene" path="res://slime.tscn" id="3_nd7jt"]
-[ext_resource type="PackedScene" path="res://assetc/green_jelly.tscn" id="5_twkrs"]
-[ext_resource type="PackedScene" path="res://assetc/pink_jelly.tscn" id="6_twkrs"]
+[ext_resource type="PackedScene" uid="uid://4h7boi23c677" path="res://assetc/title_card_jellyfish.tscn" id="3_lbm1g"]
+[ext_resource type="PackedScene" uid="uid://dkky68h3g8f4h" path="res://slime.tscn" id="3_nd7jt"]
+[ext_resource type="PackedScene" uid="uid://da6f08khtbfro" path="res://assetc/green_jelly.tscn" id="5_twkrs"]
+[ext_resource type="PackedScene" uid="uid://bhrhjx15evvh6" path="res://assetc/pink_jelly.tscn" id="6_twkrs"]
 
 [node name="Node" type="Node"]
 
@@ -404,22 +404,6 @@ position = Vector2(1046, 483)
 [node name="spike116" parent="sigma" instance=ExtResource("2_jvgsk")]
 position = Vector2(863, 291)
 
-[node name="spike130" parent="sigma" instance=ExtResource("2_jvgsk")]
-position = Vector2(734, 224)
-rotation = 3.14159
-
-[node name="spike131" parent="sigma" instance=ExtResource("2_jvgsk")]
-position = Vector2(702, 224)
-rotation = 3.14159
-
-[node name="spike132" parent="sigma" instance=ExtResource("2_jvgsk")]
-position = Vector2(670, 224)
-rotation = 3.14159
-
-[node name="spike133" parent="sigma" instance=ExtResource("2_jvgsk")]
-position = Vector2(638, 224)
-rotation = 3.14159
-
 [node name="spike134" parent="sigma" instance=ExtResource("2_jvgsk")]
 position = Vector2(448, 162)
 
@@ -535,10 +519,10 @@ position = Vector2(551, 1017)
 position = Vector2(649, 1014)
 
 [node name="PinkJelly10" parent="." instance=ExtResource("6_twkrs")]
-position = Vector2(841, 1037)
+position = Vector2(829, 1038)
 
 [node name="PinkJelly11" parent="." instance=ExtResource("6_twkrs")]
-position = Vector2(1000, 1010)
+position = Vector2(1002, 1031)
 
 [node name="PinkJelly12" parent="." instance=ExtResource("6_twkrs")]
 position = Vector2(919, 768)
@@ -556,7 +540,7 @@ position = Vector2(762, 703)
 position = Vector2(652, 700)
 
 [node name="PinkJelly17" parent="." instance=ExtResource("6_twkrs")]
-position = Vector2(544, 679)
+position = Vector2(548, 700)
 
 [node name="PinkJelly18" parent="." instance=ExtResource("6_twkrs")]
 position = Vector2(266, 714)
@@ -591,10 +575,7 @@ position = Vector2(500, 480)
 position = Vector2(589, 478)
 
 [node name="title_card_jellyfish5" parent="." instance=ExtResource("3_lbm1g")]
-position = Vector2(671, 363)
-
-[node name="title_card_jellyfish6" parent="." instance=ExtResource("3_lbm1g")]
-position = Vector2(576, 303)
+position = Vector2(724, 387)
 
 [node name="PinkJelly28" parent="." instance=ExtResource("6_twkrs")]
 position = Vector2(717, 494)
@@ -621,7 +602,7 @@ position = Vector2(943, 302)
 position = Vector2(877, 287)
 
 [node name="PinkJelly36" parent="." instance=ExtResource("6_twkrs")]
-position = Vector2(795, 290)
+position = Vector2(794, 299)
 
 [node name="PinkJelly37" parent="." instance=ExtResource("6_twkrs")]
 position = Vector2(482, 295)
@@ -655,3 +636,6 @@ position = Vector2(384, 704)
 
 [node name="PinkJelly47" parent="." instance=ExtResource("6_twkrs")]
 position = Vector2(480, 727)
+
+[node name="PinkJelly48" parent="." instance=ExtResource("6_twkrs")]
+position = Vector2(573, 338)
