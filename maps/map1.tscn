@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://23na5xqetngq" path="res://sprites fr/Brown_Tile_Terrain (16 x 16).png" id="1_g5mee"]
 [ext_resource type="Texture2D" uid="uid://dpat82casik77" path="res://sprites fr/Gray_Tile_Terrain (16 x 16).png" id="2_6dxob"]
 [ext_resource type="PackedScene" uid="uid://ce52prsg1ikcx" path="res://assetc/spike.tscn" id="3_ymuvh"]
-[ext_resource type="PackedScene" path="res://slime.tscn" id="4_7dfyu"]
+[ext_resource type="PackedScene" uid="uid://dkky68h3g8f4h" path="res://slime.tscn" id="4_7dfyu"]
 [ext_resource type="PackedScene" path="res://assetc/green_jelly.tscn" id="5_17ebq"]
 [ext_resource type="PackedScene" path="res://assetc/pink_jelly.tscn" id="6_nxseg"]
 
@@ -629,7 +629,7 @@ sources/0 = SubResource("TileSetAtlasSource_awpsh")
 sources/1 = SubResource("TileSetAtlasSource_1yopo")
 sources/2 = SubResource("TileSetAtlasSource_rcf1n")
 
-[node name="Node" type="Node"]
+[node name="Node2" type="Node"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 scale = Vector2(2, 2)
