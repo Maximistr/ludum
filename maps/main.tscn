@@ -1,10 +1,9 @@
-[gd_scene load_steps=11 format=4 uid="uid://0luqa4vjqobq"]
+[gd_scene load_steps=10 format=4 uid="uid://0luqa4vjqobq"]
 
 [ext_resource type="Texture2D" uid="uid://dpat82casik77" path="res://sprites fr/Gray_Tile_Terrain (16 x 16).png" id="1_nsuab"]
 [ext_resource type="Texture2D" uid="uid://c40cx12bsyf37" path="res://sprites fr/obrázek_2025-04-05_134238607-removebg-preview.png" id="2_72qrf"]
 [ext_resource type="FontFile" uid="uid://cm454ub4wclsn" path="res://sprites fr/Daydream.ttf" id="3_mg60w"]
 [ext_resource type="PackedScene" path="res://slime.tscn" id="4_72qrf"]
-[ext_resource type="PackedScene" path="res://assetc/green_jelly.tscn" id="6_mg60w"]
 [ext_resource type="Script" uid="uid://b8mt5ik1b6pg4" path="res://scripts/spike.gd" id="6_xo82f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oduwx"]
@@ -255,61 +254,33 @@ texture = ExtResource("1_nsuab")
 27:15/0 = 0
 27:15/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:16/0 = 0
-5:16/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:16/0 = 0
-7:16/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 13:16/0 = 0
-13:16/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 15:16/0 = 0
-15:16/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 21:16/0 = 0
-21:16/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 23:16/0 = 0
-23:16/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 29:16/0 = 0
-29:16/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 31:16/0 = 0
-31:16/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:18/0 = 0
-3:18/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:18/0 = 0
-5:18/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:18/0 = 0
-7:18/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 11:18/0 = 0
-11:18/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 13:18/0 = 0
-13:18/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 15:18/0 = 0
-15:18/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 19:18/0 = 0
-19:18/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 21:18/0 = 0
-21:18/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 23:18/0 = 0
-23:18/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 27:18/0 = 0
-27:18/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 29:18/0 = 0
-29:18/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 31:18/0 = 0
-31:18/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:20/0 = 0
-5:20/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:20/0 = 0
-7:20/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 13:20/0 = 0
-13:20/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 15:20/0 = 0
-15:20/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 21:20/0 = 0
-21:20/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 23:20/0 = 0
-23:20/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 29:20/0 = 0
-29:20/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 31:20/0 = 0
-31:20/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSet" id="TileSet_hn73v"]
 physics_layer_0/collision_layer = 1
@@ -381,6 +352,3 @@ shape = SubResource("RectangleShape2D_7vtfy")
 
 [node name="Slime" parent="." instance=ExtResource("4_72qrf")]
 position = Vector2(406, 532)
-
-[node name="GreenJelly" parent="." instance=ExtResource("6_mg60w")]
-position = Vector2(581, 523)

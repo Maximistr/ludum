@@ -1,54 +1,54 @@
 [gd_scene load_steps=18 format=3 uid="uid://4h7boi23c677"]
 
-[ext_resource type="Script" uid="uid://cp6creqnuq0nl" path="res://jellyfishes/title_card_jellyfish.gd" id="1_x0q3f"]
-[ext_resource type="Texture2D" uid="uid://8ipu523qa83j" path="res://jellyfishes/pixil-frame-0.png" id="2_h8v2e"]
+[ext_resource type="Script" uid="uid://cp6creqnuq0nl" path="res://jellyfishes/title_card_jellyfish.gd" id="1_j4b6v"]
+[ext_resource type="Texture2D" uid="uid://8ipu523qa83j" path="res://jellyfishes/pixil-frame-0.png" id="2_wfy8w"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eunsk"]
-atlas = ExtResource("2_h8v2e")
+atlas = ExtResource("2_wfy8w")
 region = Rect2(0, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_02qci"]
-atlas = ExtResource("2_h8v2e")
+atlas = ExtResource("2_wfy8w")
 region = Rect2(32, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fc7ar"]
-atlas = ExtResource("2_h8v2e")
+atlas = ExtResource("2_wfy8w")
 region = Rect2(96, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fjv3g"]
-atlas = ExtResource("2_h8v2e")
+atlas = ExtResource("2_wfy8w")
 region = Rect2(64, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vhgib"]
-atlas = ExtResource("2_h8v2e")
+atlas = ExtResource("2_wfy8w")
 region = Rect2(128, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_caf88"]
-atlas = ExtResource("2_h8v2e")
+atlas = ExtResource("2_wfy8w")
 region = Rect2(160, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_51ryx"]
-atlas = ExtResource("2_h8v2e")
+atlas = ExtResource("2_wfy8w")
 region = Rect2(192, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yeu5x"]
-atlas = ExtResource("2_h8v2e")
+atlas = ExtResource("2_wfy8w")
 region = Rect2(0, 0, 32, 40)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qk7ct"]
-atlas = ExtResource("2_h8v2e")
+atlas = ExtResource("2_wfy8w")
 region = Rect2(32, 0, 32, 40)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_byrcc"]
-atlas = ExtResource("2_h8v2e")
+atlas = ExtResource("2_wfy8w")
 region = Rect2(64, 0, 32, 40)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hurm7"]
-atlas = ExtResource("2_h8v2e")
+atlas = ExtResource("2_wfy8w")
 region = Rect2(96, 0, 32, 40)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_36y1c"]
-atlas = ExtResource("2_h8v2e")
+atlas = ExtResource("2_wfy8w")
 region = Rect2(128, 0, 32, 40)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_n85k3"]
@@ -109,7 +109,7 @@ height = 11.0
 
 [node name="title_card_jellyfish" type="CharacterBody2D"]
 scale = Vector2(3, 3)
-script = ExtResource("1_x0q3f")
+script = ExtResource("1_j4b6v")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, 0)
