@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0ecnirlnlwsh"]
+
+[ext_resource type="Script" uid="uid://bgju2bngptur8" path="res://sus.gd" id="1_aabor"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n1ekh"]
+size = Vector2(294, 0)
+
+[node name="sus" type="Area2D"]
+scale = Vector2(0.199999, 1)
+script = ExtResource("1_aabor")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_n1ekh")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -147.0
+offset_right = 147.0
+offset_bottom = 1.0
+color = Color(1, 0, 0, 1)
