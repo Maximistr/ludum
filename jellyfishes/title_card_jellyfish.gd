@@ -2,6 +2,12 @@ extends CharacterBody2D
 var allow_fade_out := true
 var g = true
 
+func death():
+	$sus.monitorable = false 
+	$body_area.monitoring = false 
+	$Sprite.play("death")
+	await get_tree().create_timer(0.8).timeout
+	queue_free()
 
 func _process(delta: float) -> void:
 	#print($Sprite.modulate.a)

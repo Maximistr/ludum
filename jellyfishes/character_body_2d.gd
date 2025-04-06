@@ -1,11 +1,11 @@
 extends CharacterBody2D
 
 func death():
-	$hit_area.monitorable = false 
+	$sus.monitorable = false 
 	$body_area.monitoring = false 
 	$Sprite.play("death")
-	if $Sprite.animation_finished:
-		queue_free()
+	await get_tree().create_timer(0.8).timeout
+	queue_free()
 
 func _on_body_area_body_entered(body: Node2D) -> void:
 	body.death
