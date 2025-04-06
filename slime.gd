@@ -61,7 +61,7 @@ func death():
 	get_tree().reload_current_scene()
 
 func _on_jelly_area_entered(area: Area2D) -> void:
-	var e = area#.get_parent()
+	var e = area.get_parent()
 	e.death()
 
 	
