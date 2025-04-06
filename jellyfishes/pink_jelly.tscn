@@ -77,7 +77,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"death",
-"speed": 9.5
+"speed": 9.49
 }, {
 "frames": [{
 "duration": 1.0,
@@ -97,7 +97,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 6.0
+"speed": 7.5
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8wrxv"]
@@ -108,15 +108,16 @@ height = 10.0
 size = Vector2(9, 0)
 
 [node name="PinkJelly" type="CharacterBody2D"]
+position = Vector2(7.86781e-06, 7.62939e-06)
 scale = Vector2(3, 3)
 script = ExtResource("1_8ode3")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, 1)
+position = Vector2(0, 0.999997)
 sprite_frames = SubResource("SpriteFrames_g2475")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.285045
+frame_progress = 0.403989
 
 [node name="body_area" type="Area2D" parent="."]
 position = Vector2(1, 3)

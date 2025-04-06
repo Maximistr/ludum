@@ -75,9 +75,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_51ryx")
 }],
-"loop": true,
+"loop": false,
 "name": &"death",
-"speed": 10.0
+"speed": 9.49
 }, {
 "frames": [{
 "duration": 1.0,
@@ -97,7 +97,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 6.3
+"speed": 7.5
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i0e5p"]
@@ -115,16 +115,7 @@ position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_n85k3")
 animation = &"idle"
 autoplay = "idle"
-frame = 2
-frame_progress = 0.0514995
-
-[node name="Timer" type="Timer" parent="Sprite"]
-wait_time = 1.731
-one_shot = true
-
-[node name="Timer2" type="Timer" parent="Sprite"]
-wait_time = 17.823
-one_shot = true
+frame_progress = 0.0704002
 
 [node name="Hit_area" type="Area2D" parent="."]
 
@@ -137,9 +128,3 @@ shape = SubResource("RectangleShape2D_i0e5p")
 [node name="body" type="CollisionShape2D" parent="sus"]
 position = Vector2(0, 1)
 shape = SubResource("CapsuleShape2D_ve5p3")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(4.925, 4.925)
-
-[connection signal="timeout" from="Sprite/Timer" to="." method="_on_timer_timeout"]
-[connection signal="timeout" from="Sprite/Timer" to="." method="_on_Timer_timeout"]
