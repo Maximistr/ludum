@@ -163,7 +163,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_d8dsn")
 }],
-"loop": true,
+"loop": false,
 "name": &"death",
 "speed": 15.0
 }, {
@@ -208,7 +208,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_b48k4")
 }],
-"loop": true,
+"loop": false,
 "name": &"upg",
 "speed": 5.0
 }, {
@@ -290,7 +290,7 @@ script = ExtResource("1_bratd")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pwq85")
-animation = &"spawn"
+animation = &"Idle"
 autoplay = "spawn"
 
 [node name="colision" type="CollisionShape2D" parent="."]
