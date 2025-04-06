@@ -74,8 +74,11 @@ func death():
 	get_tree().reload_current_scene()
 
 func _on_jelly_area_entered(area: Area2D) -> void:
-	var e = area.get_parent()
-	e.death()
+	if area.name == "sus":
+		var e = area.get_parent()
+		e.death()
+	if area.name == "start_jump":
+		velocity.y -= 500
 
 	
 func kill():
