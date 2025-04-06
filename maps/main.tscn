@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://0luqa4vjqobq"]
+[gd_scene load_steps=13 format=4 uid="uid://0luqa4vjqobq"]
 
 [ext_resource type="Script" uid="uid://caq71qrdyrj3h" path="res://maps/main.gd" id="1_mg60w"]
 [ext_resource type="Texture2D" uid="uid://dpat82casik77" path="res://sprites fr/Gray_Tile_Terrain (16 x 16).png" id="1_nsuab"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://dkky68h3g8f4h" path="res://slime.tscn" id="4_72qrf"]
 [ext_resource type="Script" uid="uid://b8mt5ik1b6pg4" path="res://scripts/spike.gd" id="6_xo82f"]
 [ext_resource type="Texture2D" uid="uid://cmtwq6l07wt1e" path="res://sprites fr/target.png" id="7_3oufs"]
-[ext_resource type="PackedScene" uid="uid://bhrhjx15evvh6" path="res://assetc/pink_jelly.tscn" id="7_qt0it"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oduwx"]
 texture = ExtResource("1_nsuab")
@@ -375,21 +374,3 @@ offset_top = -63.0
 offset_right = 28.0
 offset_bottom = 1.0
 texture = ExtResource("7_3oufs")
-
-[node name="PinkJelly" parent="." instance=ExtResource("7_qt0it")]
-position = Vector2(683, 118)
-
-[node name="PinkJelly2" parent="." instance=ExtResource("7_qt0it")]
-position = Vector2(523, 199)
-
-[node name="PinkJelly3" parent="." instance=ExtResource("7_qt0it")]
-position = Vector2(692, 269)
-
-[node name="PinkJelly4" parent="." instance=ExtResource("7_qt0it")]
-position = Vector2(523, 351)
-
-[node name="PinkJelly5" parent="." instance=ExtResource("7_qt0it")]
-position = Vector2(690, 427)
-
-[node name="PinkJelly6" parent="." instance=ExtResource("7_qt0it")]
-position = Vector2(593, 490)
