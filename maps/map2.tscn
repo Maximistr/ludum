@@ -626,7 +626,7 @@ sources/0 = SubResource("TileSetAtlasSource_pmudh")
 sources/1 = SubResource("TileSetAtlasSource_23t7g")
 sources/2 = SubResource("TileSetAtlasSource_hdbah")
 
-[node name="Node" type="Node"]
+[node name="Node2" type="Node"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 scale = Vector2(2, 2)

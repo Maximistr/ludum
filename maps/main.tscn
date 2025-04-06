@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c40cx12bsyf37" path="res://sprites fr/obrázek_2025-04-05_134238607-removebg-preview.png" id="2_72qrf"]
 [ext_resource type="FontFile" uid="uid://cm454ub4wclsn" path="res://sprites fr/Daydream.ttf" id="3_mg60w"]
 [ext_resource type="PackedScene" path="res://slime.tscn" id="4_72qrf"]
-[ext_resource type="PackedScene" uid="uid://da6f08khtbfro" path="res://assetc/green_jelly.tscn" id="6_mg60w"]
+[ext_resource type="PackedScene" path="res://assetc/green_jelly.tscn" id="6_mg60w"]
 [ext_resource type="Script" uid="uid://b8mt5ik1b6pg4" path="res://scripts/spike.gd" id="6_xo82f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oduwx"]

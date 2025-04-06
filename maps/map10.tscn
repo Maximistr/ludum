@@ -2,6 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://dbr4h0keagch5" path="res://assetc/M.sides.tscn" id="1_mkmqj"]
 
-[node name="Node" type="Node"]
+[node name="Node2" type="Node"]
 
 [node name="TileMapLayer" parent="." instance=ExtResource("1_mkmqj")]
