@@ -100,8 +100,9 @@ animations = [{
 "speed": 7.5
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3gx06"]
-size = Vector2(7, 9)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8wrxv"]
+radius = 3.66667
+height = 10.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yo0j8"]
 size = Vector2(9, 0)
@@ -122,8 +123,7 @@ frame_progress = 0.17917
 position = Vector2(1, 3)
 
 [node name="body" type="CollisionShape2D" parent="body_area"]
-position = Vector2(-0.5, -0.5)
-shape = SubResource("RectangleShape2D_3gx06")
+shape = SubResource("CapsuleShape2D_8wrxv")
 
 [node name="sus" type="Area2D" parent="."]
 

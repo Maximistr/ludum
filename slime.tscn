@@ -163,7 +163,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_d8dsn")
 }],
-"loop": false,
+"loop": true,
 "name": &"death",
 "speed": 15.0
 }, {
@@ -208,7 +208,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_b48k4")
 }],
-"loop": false,
+"loop": true,
 "name": &"upg",
 "speed": 5.0
 }, {
@@ -272,24 +272,25 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2002g"]
-size = Vector2(4.33334, 17.6667)
+size = Vector2(4.33334, 16.3333)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bratd"]
-size = Vector2(3.66667, 20.3333)
+size = Vector2(3.66667, 19.6667)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5b0gg"]
 size = Vector2(7, 23)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_da4t2"]
-size = Vector2(20.6667, 29)
+size = Vector2(16.3333, 24.3333)
 
 [node name="Slime" type="CharacterBody2D"]
+position = Vector2(95, 40)
 scale = Vector2(3, 3)
 script = ExtResource("1_bratd")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pwq85")
-animation = &"Idle"
+animation = &"spawn"
 autoplay = "spawn"
 
 [node name="colision" type="CollisionShape2D" parent="."]
@@ -310,7 +311,7 @@ offset = Vector2(-3.84896, 19.9002)
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="early"]
-position = Vector2(0.499996, 18.8333)
+position = Vector2(-0.5, 18.8333)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_2002g")
 debug_color = Color(1, 0, 0, 0.419608)
@@ -319,7 +320,7 @@ debug_color = Color(1, 0, 0, 0.419608)
 monitorable = false
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="crit"]
-position = Vector2(0.5, 14.8333)
+position = Vector2(-0.166664, 14.8333)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_bratd")
 debug_color = Color(1, 1, 0, 0.419608)
@@ -336,16 +337,13 @@ debug_color = Color(0.992157, 0, 0, 0.419608)
 [node name="jelly" type="Area2D" parent="."]
 
 [node name="col_kill" type="CollisionShape2D" parent="jelly"]
-position = Vector2(0.499992, 15.6667)
+position = Vector2(0.5, 13.5)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_da4t2")
 disabled = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(1.5, 1.5)
-
-[node name="atk cooldown" type="Timer" parent="."]
-one_shot = true
 
 [connection signal="area_entered" from="early" to="." method="_on_early_area_entered"]
 [connection signal="area_exited" from="early" to="." method="_on_early_area_exited"]
@@ -354,4 +352,3 @@ one_shot = true
 [connection signal="area_entered" from="late" to="." method="_on_late_area_entered"]
 [connection signal="area_exited" from="late" to="." method="_on_late_area_exited"]
 [connection signal="area_entered" from="jelly" to="." method="_on_jelly_area_entered"]
-[connection signal="timeout" from="atk cooldown" to="." method="_on_atk_cooldown_timeout"]

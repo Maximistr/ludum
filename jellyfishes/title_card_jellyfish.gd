@@ -13,13 +13,13 @@ func _process(delta: float) -> void:
 	#print($Sprite.modulate.a)
 	#$Spritmodulate.a = $Sprite/Timer.time_left
 	if $Sprite.modulate.a > 0:
-		$Hit_area/body.disabled = false
-		$sus/hit.disabled = false
+		$Hit_area/hit.disabled = false
+		$sus/body.disabled = false
 	if $Sprite.modulate.a >= 1:
 		g = true
 	elif $Sprite.modulate.a <= 0:
-		$Hit_area/body.disabled = true
-		$sus/hit.disabled = true
+		$Hit_area/hit.disabled = true
+		$sus/body.disabled = true
 		await get_tree().create_timer(1).timeout
 		g = false
 	if g == true:
