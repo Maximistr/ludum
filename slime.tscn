@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://cx0wtrq8n5hmo"]
+[gd_scene load_steps=45 format=3 uid="uid://4thshidoeu1a"]
 
 [ext_resource type="Texture2D" uid="uid://okhgsgml3nyd" path="res://slime_sprites/GreenSlimeDie-Sheet.png" id="1_5jc4t"]
 [ext_resource type="Script" uid="uid://pi4qp0rle2ii" path="res://slime.gd" id="1_bratd"]
