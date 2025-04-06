@@ -272,10 +272,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2002g"]
-size = Vector2(4.33334, 16.3333)
+size = Vector2(4.33334, 17.6667)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bratd"]
-size = Vector2(3.66667, 19.6667)
+size = Vector2(3.66667, 20.3333)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5b0gg"]
 size = Vector2(7, 23)
@@ -311,7 +311,7 @@ offset = Vector2(-3.84896, 19.9002)
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="early"]
-position = Vector2(-0.5, 18.8333)
+position = Vector2(0.499996, 18.8333)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_2002g")
 debug_color = Color(1, 0, 0, 0.419608)
@@ -320,7 +320,7 @@ debug_color = Color(1, 0, 0, 0.419608)
 monitorable = false
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="crit"]
-position = Vector2(-0.166664, 14.8333)
+position = Vector2(0.5, 14.8333)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_bratd")
 debug_color = Color(1, 1, 0, 0.419608)
