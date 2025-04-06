@@ -1,54 +1,125 @@
-[gd_scene load_steps=28 format=3 uid="uid://bb866cijtkecb"]
+[gd_scene load_steps=28 format=3 uid="uid://cx0wtrq8n5hmo"]
 
-[ext_resource type="Script" uid="uid://cd2h5yiddk34" path="res://slime.gd" id="1_bratd"]
-[ext_resource type="Texture2D" uid="uid://bu8lxgllfqeg3" path="res://slime_sprites/GreenSlimeIdle-Sheet.png" id="1_jayke"]
-[ext_resource type="Texture2D" uid="uid://bpknm4285wfnq" path="res://slime_sprites/GreenSlimeJump-Sheet.png" id="2_2002g"]
-[ext_resource type="Texture2D" uid="uid://0ykxgammdsi5" path="res://slime_sprites/GreenSlimeHurt-Sheet.png" id="3_bratd"]
-[ext_resource type="Texture2D" uid="uid://cx1bop582ihwn" path="res://slime_sprites/GreenSlimeWalking-Sheet.png" id="4_5b0gg"]
-[ext_resource type="Texture2D" uid="uid://cikioulxqtb1c" path="res://slime_sprites/attack.png" id="5_da4t2"]
+[sub_resource type="GDScript" id="GDScript_1vjne"]
+script/source = "extends CharacterBody2D
+
+ 
+const SPEED = 300.0
+const JUMP_VELOCITY = -500.0
+var hit_val = 0
+var upg = []
+
+func _physics_process(delta: float) -> void:
+	if not is_on_floor():
+		velocity += get_gravity() * delta
+		$Sprite.play(\"jump\")
+	if is_on_floor():
+		$Sprite.play(\"walk\")
+
+	var direction := Input.get_axis(\"left\", \"right\")
+	if direction:
+		velocity.x = direction * SPEED
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+		
+	if Input.is_action_just_pressed(\"atk\"):
+		$attack.play(\"default\")
+		
+	if $early.has_overlapping_areas() == true:
+		hit_val = 1
+	if  $crit.has_overlapping_areas() == true:
+		hit_val = 2
+	if $late.has_overlapping_areas() == true:
+		hit_val = 3
+	if $early.has_overlapping_areas() == false and $crit.has_overlapping_areas() == false and $late.has_overlapping_areas() == false:
+		hit_val = 0
+		
+		
+	if Input.is_action_just_pressed(\"atk\") and hit_val > 0 and not is_on_floor():
+		velocity.y = 0
+		kill()
+		if hit_val == 2:
+			velocity.y += JUMP_VELOCITY * 1.2
+		else:
+			velocity.y += JUMP_VELOCITY
+		print(hit_val)
+		hit_val = 0
+	if Input.is_action_just_pressed(\"1\"):
+		upg[5] = 1
+
+	if Input.is_action_just_pressed(\"atk\") and is_on_floor():
+		velocity.y = JUMP_VELOCITY + 50
+	
+	move_and_slide()
+
+func death():
+	pass
+
+func _on_jelly_area_entered(area: Area2D) -> void:
+	var e = area#.get_parent()
+	e.death()
+
+	
+func kill():
+	$jelly/col_kill.disabled = false
+	await get_tree().create_timer(0.1).timeout
+	$jelly/col_kill.disabled = true
+"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2d52u"]
+load_path = "res://.godot/imported/GreenSlimeIdle-Sheet.png-b119f622ceac451b81a3446f737810b1.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jrxk1"]
-atlas = ExtResource("1_jayke")
+atlas = SubResource("CompressedTexture2D_2d52u")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_alucd"]
-atlas = ExtResource("1_jayke")
+atlas = SubResource("CompressedTexture2D_2d52u")
 region = Rect2(16, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8w6w5"]
-atlas = ExtResource("1_jayke")
+atlas = SubResource("CompressedTexture2D_2d52u")
 region = Rect2(32, 0, 16, 16)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5jc4t"]
+load_path = "res://.godot/imported/GreenSlimeJump-Sheet.png-a8954dee3520ebb59f6a295ab4755b21.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_lrvan"]
-atlas = ExtResource("2_2002g")
+atlas = SubResource("CompressedTexture2D_5jc4t")
 region = Rect2(48, 0, 16, 16)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4l1t8"]
+load_path = "res://.godot/imported/GreenSlimeHurt-Sheet.png-5fb99585dc40f132821f526f60744a4c.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_0gjuw"]
-atlas = ExtResource("3_bratd")
+atlas = SubResource("CompressedTexture2D_4l1t8")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6ggc5"]
-atlas = ExtResource("3_bratd")
+atlas = SubResource("CompressedTexture2D_4l1t8")
 region = Rect2(16, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b48k4"]
-atlas = ExtResource("3_bratd")
+atlas = SubResource("CompressedTexture2D_4l1t8")
 region = Rect2(32, 0, 16, 16)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ppcr1"]
+load_path = "res://.godot/imported/GreenSlimeWalking-Sheet.png-21eb4213fc7580a73bd6d0daee9d8a88.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_31ce7"]
-atlas = ExtResource("4_5b0gg")
+atlas = SubResource("CompressedTexture2D_ppcr1")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nowxr"]
-atlas = ExtResource("4_5b0gg")
+atlas = SubResource("CompressedTexture2D_ppcr1")
 region = Rect2(16, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yfmhs"]
-atlas = ExtResource("4_5b0gg")
+atlas = SubResource("CompressedTexture2D_ppcr1")
 region = Rect2(32, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hagqt"]
-atlas = ExtResource("4_5b0gg")
+atlas = SubResource("CompressedTexture2D_ppcr1")
 region = Rect2(48, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pwq85"]
@@ -111,16 +182,19 @@ animations = [{
 radius = 7.0
 height = 14.0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jayke"]
+load_path = "res://.godot/imported/attack.png-2dd269043624da1c89e17577118f8c0b.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_o2fkb"]
-atlas = ExtResource("5_da4t2")
+atlas = SubResource("CompressedTexture2D_jayke")
 region = Rect2(0, 0, 38, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_itray"]
-atlas = ExtResource("5_da4t2")
+atlas = SubResource("CompressedTexture2D_jayke")
 region = Rect2(38, 0, 38, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0cb1b"]
-atlas = ExtResource("5_da4t2")
+atlas = SubResource("CompressedTexture2D_jayke")
 region = Rect2(76, 0, 38, 24)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_d8dsn"]
@@ -150,12 +224,12 @@ size = Vector2(3.66667, 19.6667)
 size = Vector2(7, 23)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_da4t2"]
-size = Vector2(20, 29.6667)
+size = Vector2(23.6667, 29.6667)
 
 [node name="Slime" type="CharacterBody2D"]
 position = Vector2(95, 40)
 scale = Vector2(3, 3)
-script = ExtResource("1_bratd")
+script = SubResource("GDScript_1vjne")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pwq85")
@@ -204,7 +278,7 @@ debug_color = Color(0.992157, 0, 0, 0.419608)
 [node name="jelly" type="Area2D" parent="."]
 
 [node name="col_kill" type="CollisionShape2D" parent="jelly"]
-position = Vector2(-0.166668, 11.3333)
+position = Vector2(-0.166677, 13.1666)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_da4t2")
 disabled = true
