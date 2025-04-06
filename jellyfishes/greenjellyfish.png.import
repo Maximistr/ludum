@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brb1jaya0myst"
-path="res://.godot/imported/GreenSlimeDie-Sheet.png-dfc1f494aac358c920a000f88ca3c290.ctex"
+uid="uid://ng7flefom06u"
+path="res://.godot/imported/greenjellyfish.png-3cedc0633d34ac17fccdd2c612cd0d65.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GreenSlime/GreenSlimeDie-Sheet.png"
-dest_files=["res://.godot/imported/GreenSlimeDie-Sheet.png-dfc1f494aac358c920a000f88ca3c290.ctex"]
+source_file="res://jellyfishes/greenjellyfish.png"
+dest_files=["res://.godot/imported/greenjellyfish.png-3cedc0633d34ac17fccdd2c612cd0d65.ctex"]
 
 [params]
 

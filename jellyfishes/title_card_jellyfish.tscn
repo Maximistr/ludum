@@ -1,0 +1,145 @@
+[gd_scene load_steps=18 format=3 uid="uid://4h7boi23c677"]
+
+[ext_resource type="Script" path="res://jellyfishes/title_card_jellyfish.gd" id="1_x0q3f"]
+[ext_resource type="Texture2D" uid="uid://8ipu523qa83j" path="res://jellyfishes/pixil-frame-0.png" id="2_h8v2e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eunsk"]
+atlas = ExtResource("2_h8v2e")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_02qci"]
+atlas = ExtResource("2_h8v2e")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fc7ar"]
+atlas = ExtResource("2_h8v2e")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fjv3g"]
+atlas = ExtResource("2_h8v2e")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vhgib"]
+atlas = ExtResource("2_h8v2e")
+region = Rect2(128, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_caf88"]
+atlas = ExtResource("2_h8v2e")
+region = Rect2(160, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_51ryx"]
+atlas = ExtResource("2_h8v2e")
+region = Rect2(192, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yeu5x"]
+atlas = ExtResource("2_h8v2e")
+region = Rect2(0, 0, 32, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qk7ct"]
+atlas = ExtResource("2_h8v2e")
+region = Rect2(32, 0, 32, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_byrcc"]
+atlas = ExtResource("2_h8v2e")
+region = Rect2(64, 0, 32, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hurm7"]
+atlas = ExtResource("2_h8v2e")
+region = Rect2(96, 0, 32, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_36y1c"]
+atlas = ExtResource("2_h8v2e")
+region = Rect2(128, 0, 32, 40)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n85k3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eunsk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_02qci")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fc7ar")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fjv3g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vhgib")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_caf88")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_51ryx")
+}],
+"loop": true,
+"name": &"death",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yeu5x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qk7ct")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_byrcc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hurm7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_36y1c")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.3
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i0e5p"]
+size = Vector2(7, 0)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ve5p3"]
+radius = 3.0
+height = 8.0
+
+[node name="title_card_jellyfish" type="CharacterBody2D"]
+script = ExtResource("1_x0q3f")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, 0)
+sprite_frames = SubResource("SpriteFrames_n85k3")
+animation = &"idle"
+autoplay = "idle"
+frame = 2
+frame_progress = 0.0514995
+
+[node name="Timer" type="Timer" parent="Sprite"]
+wait_time = 1.731
+one_shot = true
+
+[node name="Timer2" type="Timer" parent="Sprite"]
+wait_time = 17.823
+one_shot = true
+
+[node name="Hit_area" type="Area2D" parent="."]
+
+[node name="hit" type="CollisionShape2D" parent="Hit_area"]
+position = Vector2(-0.5, -9)
+shape = SubResource("RectangleShape2D_i0e5p")
+
+[node name="sus" type="Area2D" parent="."]
+
+[node name="body" type="CollisionShape2D" parent="sus"]
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_ve5p3")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4.925, 4.925)
+
+[connection signal="timeout" from="Sprite/Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Sprite/Timer" to="." method="_on_Timer_timeout"]
