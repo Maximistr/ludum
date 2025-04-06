@@ -1,11 +1,11 @@
 [gd_scene load_steps=28 format=3 uid="uid://ccpeiavy6sx0y"]
 
-[ext_resource type="Script" path="res://slime.gd" id="1_bratd"]
-[ext_resource type="Texture2D" uid="uid://bu8lxgllfqeg3" path="res://sprites/GreenSlimeIdle-Sheet.png" id="1_jayke"]
-[ext_resource type="Texture2D" uid="uid://bpknm4285wfnq" path="res://sprites/GreenSlimeJump-Sheet.png" id="2_2002g"]
-[ext_resource type="Texture2D" uid="uid://0ykxgammdsi5" path="res://sprites/GreenSlimeHurt-Sheet.png" id="3_bratd"]
-[ext_resource type="Texture2D" uid="uid://cx1bop582ihwn" path="res://sprites/GreenSlimeWalking-Sheet.png" id="4_5b0gg"]
-[ext_resource type="Texture2D" uid="uid://cikioulxqtb1c" path="res://sprites/attack.png" id="5_da4t2"]
+[ext_resource type="Script" uid="uid://c42mvg5fxrvyn" path="res://slime.gd" id="1_bratd"]
+[ext_resource type="Texture2D" uid="uid://bu8lxgllfqeg3" path="res://slime_sprites/GreenSlimeIdle-Sheet.png" id="1_jayke"]
+[ext_resource type="Texture2D" uid="uid://bpknm4285wfnq" path="res://slime_sprites/GreenSlimeJump-Sheet.png" id="2_2002g"]
+[ext_resource type="Texture2D" uid="uid://0ykxgammdsi5" path="res://slime_sprites/GreenSlimeHurt-Sheet.png" id="3_bratd"]
+[ext_resource type="Texture2D" uid="uid://cx1bop582ihwn" path="res://slime_sprites/GreenSlimeWalking-Sheet.png" id="4_5b0gg"]
+[ext_resource type="Texture2D" uid="uid://cikioulxqtb1c" path="res://slime_sprites/attack.png" id="5_da4t2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jrxk1"]
 atlas = ExtResource("1_jayke")

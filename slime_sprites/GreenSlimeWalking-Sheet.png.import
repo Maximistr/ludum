@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx1bop582ihwn"
-path="res://.godot/imported/GreenSlimeWalking-Sheet.png-3e464c5f64cdf814b4cbce1524e39785.ctex"
+path="res://.godot/imported/GreenSlimeWalking-Sheet.png-21eb4213fc7580a73bd6d0daee9d8a88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/GreenSlimeWalking-Sheet.png"
-dest_files=["res://.godot/imported/GreenSlimeWalking-Sheet.png-3e464c5f64cdf814b4cbce1524e39785.ctex"]
+source_file="res://slime_sprites/GreenSlimeWalking-Sheet.png"
+dest_files=["res://.godot/imported/GreenSlimeWalking-Sheet.png-21eb4213fc7580a73bd6d0daee9d8a88.ctex"]
 
 [params]
 
