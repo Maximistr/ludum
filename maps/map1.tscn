@@ -722,45 +722,60 @@ position = Vector2(776, 1613)
 
 [node name="Slime" parent="." instance=ExtResource("4_7dfyu")]
 position = Vector2(529, 1492)
+collision_layer = 0
 
 [node name="GreenJelly" parent="." instance=ExtResource("5_17ebq")]
 position = Vector2(654, 1502)
+collision_layer = 0
 
 [node name="PinkJelly" parent="." instance=ExtResource("6_nxseg")]
 position = Vector2(474, 1438)
+collision_layer = 0
 
 [node name="PinkJelly2" parent="." instance=ExtResource("6_nxseg")]
 position = Vector2(411, 1323)
+collision_layer = 0
 
 [node name="PinkJelly3" parent="." instance=ExtResource("6_nxseg")]
 position = Vector2(503, 1212)
+collision_layer = 0
 
 [node name="PinkJelly4" parent="." instance=ExtResource("6_nxseg")]
 position = Vector2(412, 1085)
+collision_layer = 0
 
 [node name="PinkJelly5" parent="." instance=ExtResource("6_nxseg")]
 position = Vector2(581, 946)
+collision_layer = 0
 
 [node name="PinkJelly6" parent="." instance=ExtResource("6_nxseg")]
 position = Vector2(418, 810)
+collision_layer = 0
 
 [node name="PinkJelly7" parent="." instance=ExtResource("6_nxseg")]
 position = Vector2(578, 700)
+collision_layer = 0
 
 [node name="PinkJelly8" parent="." instance=ExtResource("6_nxseg")]
 position = Vector2(654, 563)
+collision_layer = 0
 
 [node name="PinkJelly9" parent="." instance=ExtResource("6_nxseg")]
 position = Vector2(469, 482)
+collision_layer = 0
 
 [node name="PinkJelly10" parent="." instance=ExtResource("6_nxseg")]
-position = Vector2(560, 353)
+position = Vector2(591, 355)
+collision_layer = 0
 
 [node name="PinkJelly11" parent="." instance=ExtResource("6_nxseg")]
 position = Vector2(411, 307)
+collision_layer = 0
 
 [node name="PinkJelly12" parent="." instance=ExtResource("6_nxseg")]
-position = Vector2(648, 200)
+position = Vector2(677, 198)
+collision_layer = 0
 
 [node name="PinkJelly13" parent="." instance=ExtResource("6_nxseg")]
-position = Vector2(447, 94)
+position = Vector2(438, 96)
+collision_layer = 0
