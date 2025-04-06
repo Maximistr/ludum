@@ -100,12 +100,11 @@ animations = [{
 "speed": 7.5
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j4b6v"]
+size = Vector2(7, 9)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i0e5p"]
 size = Vector2(7, 0)
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ve5p3"]
-radius = 3.0
-height = 11.0
 
 [node name="title_card_jellyfish" type="CharacterBody2D"]
 scale = Vector2(3, 3)
@@ -120,14 +119,14 @@ frame_progress = 0.852362
 
 [node name="Hit_area" type="Area2D" parent="."]
 
-[node name="hit" type="CollisionShape2D" parent="Hit_area"]
-position = Vector2(-0.5, -9)
-shape = SubResource("RectangleShape2D_i0e5p")
+[node name="body" type="CollisionShape2D" parent="Hit_area"]
+position = Vector2(-0.5, 1.5)
+shape = SubResource("RectangleShape2D_j4b6v")
 
 [node name="sus" type="Area2D" parent="."]
 
-[node name="body" type="CollisionShape2D" parent="sus"]
-position = Vector2(0, 1)
-shape = SubResource("CapsuleShape2D_ve5p3")
+[node name="hit" type="CollisionShape2D" parent="sus"]
+position = Vector2(-0.5, -9)
+shape = SubResource("RectangleShape2D_i0e5p")
 
 [connection signal="body_entered" from="Hit_area" to="." method="_on_hit_area_body_entered"]
