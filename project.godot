@@ -20,6 +20,10 @@ config/icon="res://sprites fr/icon.svg"
 
 Vars="*res://Vars.gd"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [input]
 
 atk={

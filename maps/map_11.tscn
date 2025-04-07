@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://da6f08khtbfro" path="res://assetc/green_jelly.tscn" id="5_kysje"]
 [ext_resource type="PackedScene" uid="uid://4h7boi23c677" path="res://assetc/title_card_jellyfish.tscn" id="6_7ytvc"]
 
-[node name="map_11" type="Node"]
+[node name="map_11" type="Node2D"]
 
 [node name="TileMapLayer" parent="." instance=ExtResource("1_0hmy1")]
 position = Vector2(0, -1)
