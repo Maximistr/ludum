@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://dbr4h0keagch5" path="res://assetc/M.sides.tscn" id="1_i12de"]
 [ext_resource type="PackedScene" uid="uid://ce52prsg1ikcx" path="res://assetc/spike.tscn" id="2_i1k61"]
-[ext_resource type="PackedScene" path="res://slime.tscn" id="3_4tds2"]
-[ext_resource type="PackedScene" path="res://assetc/pink_jelly.tscn" id="4_ps52c"]
+[ext_resource type="PackedScene" uid="uid://dkky68h3g8f4h" path="res://slime.tscn" id="3_4tds2"]
+[ext_resource type="PackedScene" uid="uid://bhrhjx15evvh6" path="res://assetc/pink_jelly.tscn" id="4_ps52c"]
 
 [node name="Node" type="Node"]
 

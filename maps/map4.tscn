@@ -2,9 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://dbr4h0keagch5" path="res://assetc/M.sides.tscn" id="1_uc756"]
 [ext_resource type="PackedScene" uid="uid://ce52prsg1ikcx" path="res://assetc/spike.tscn" id="2_xovua"]
-[ext_resource type="PackedScene" path="res://slime.tscn" id="3_xovua"]
-[ext_resource type="PackedScene" path="res://assetc/pink_jelly.tscn" id="4_tdvxo"]
-[ext_resource type="PackedScene" path="res://assetc/green_jelly.tscn" id="5_7yj33"]
+[ext_resource type="PackedScene" uid="uid://dkky68h3g8f4h" path="res://slime.tscn" id="3_xovua"]
+[ext_resource type="PackedScene" uid="uid://bhrhjx15evvh6" path="res://assetc/pink_jelly.tscn" id="4_tdvxo"]
+[ext_resource type="PackedScene" uid="uid://da6f08khtbfro" path="res://assetc/green_jelly.tscn" id="5_7yj33"]
 
 [node name="Node" type="Node"]
 
