@@ -783,7 +783,7 @@ position = Vector2(486, 78)
 position = Vector2(432, 567)
 
 [node name="title_card_jellyfish" parent="." instance=ExtResource("6_m15uv")]
-position = Vector2(543, 1167)
+position = Vector2(546, 1200)
 
 [node name="GreenJelly" parent="." instance=ExtResource("6_4k56d")]
 position = Vector2(471, 884)
