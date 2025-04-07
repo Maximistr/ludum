@@ -341,9 +341,6 @@ rotation = 1.5708
 shape = SubResource("RectangleShape2D_da4t2")
 disabled = true
 
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(1.5, 1.5)
-
 [node name="atk cooldown" type="Timer" parent="."]
 one_shot = true
 

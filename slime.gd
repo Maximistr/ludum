@@ -14,7 +14,6 @@ func _ready() -> void:
 	can_atk = true
 
 func _physics_process(delta: float) -> void:
-	print(can_atk)
 	if not is_on_floor() and can_do == true:
 		velocity += get_gravity() * delta
 		$Sprite.play("jump")
@@ -59,7 +58,6 @@ func _physics_process(delta: float) -> void:
 			velocity.y += JUMP_VELOCITY * 1.2
 		else:
 			velocity.y += JUMP_VELOCITY
-		print(hit_val)
 		hit_val = 0
 
 	if Input.is_action_just_pressed("atk") and is_on_floor() and can_do == true:
@@ -71,15 +69,18 @@ func death():
 	can_do = false
 	$Sprite.play("death")
 	await get_tree().create_timer(0.8).timeout
-	get_tree().reload_current_scene()
+	if get_tree():
+		get_tree().reload_current_scene()
+	else:
+		pass
+
 
 func _on_jelly_area_entered(area: Area2D) -> void:
 	if area.name == "sus":
 		var e = area.get_parent()
 		e.death()
 	if area.name == "start_jump":
-		velocity.y -= 500
-
+		velocity.y -= 600
 	
 func kill():
 	$jelly/col_kill.disabled = false
