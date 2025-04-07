@@ -4,7 +4,7 @@ extends Node
 	preload("res://maps/map1.tscn"),
 	#preload("res://maps/map2.tscn"),a
 	preload("res://maps/map3.tscn"),
-	preload("res://maps/map4.tscn"),
+	#preload("res://maps/map4.tscn"),
 	#preload("res://maps/map5.tscn"),
 	#preload("res://maps/map6.tscn"),
 	#preload("res://maps/mapa7.tscn"),

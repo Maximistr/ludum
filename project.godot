@@ -10,10 +10,11 @@ config_version=5
 
 [application]
 
-config/name="depth jumper"
+config/name="slime jumper"
 run/main_scene="uid://0luqa4vjqobq"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="res://sprites fr/icon.svg"
+boot_splash/image="uid://do4esyxtvd13y"
+config/icon="uid://do4esyxtvd13y"
 <<<<<<<HEADrun/main_scene="res://jellyfishes/green_jelly.tscn"
 
 [autoload]

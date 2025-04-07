@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://0luqa4vjqobq"]
+[gd_scene load_steps=15 format=4 uid="uid://0luqa4vjqobq"]
 
 [ext_resource type="Script" uid="uid://caq71qrdyrj3h" path="res://maps/main.gd" id="1_mg60w"]
 [ext_resource type="Texture2D" uid="uid://dpat82casik77" path="res://sprites fr/Gray_Tile_Terrain (16 x 16).png" id="1_nsuab"]
@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://dkky68h3g8f4h" path="res://slime.tscn" id="4_72qrf"]
 [ext_resource type="Script" uid="uid://b8mt5ik1b6pg4" path="res://scripts/spike.gd" id="6_xo82f"]
 [ext_resource type="Texture2D" uid="uid://cmtwq6l07wt1e" path="res://sprites fr/target.png" id="7_3oufs"]
+[ext_resource type="PackedScene" uid="uid://bhrhjx15evvh6" path="res://assetc/pink_jelly.tscn" id="8_qt0it"]
+[ext_resource type="PackedScene" uid="uid://ce52prsg1ikcx" path="res://assetc/spike.tscn" id="9_ofrm6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oduwx"]
 texture = ExtResource("1_nsuab")
@@ -405,3 +407,28 @@ position = Vector2(572, 576)
 
 [node name="lvl summon" type="Node2D" parent="."]
 position = Vector2(0, -1600)
+
+[node name="Label" type="Label" parent="."]
+z_index = 1
+offset_left = 410.0
+offset_top = 473.0
+offset_right = 26757.0
+offset_bottom = 1630.0
+scale = Vector2(0.015, 0.015)
+theme_override_fonts/font = ExtResource("3_mg60w")
+theme_override_font_sizes/font_size = 881
+text = "Click LMB or SPACE to jump/attack"
+
+[node name="PinkJelly" parent="." instance=ExtResource("8_qt0it")]
+position = Vector2(601, 69)
+
+[node name="spike2" parent="." instance=ExtResource("9_ofrm6")]
+position = Vector2(289, 544)
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 264.0
+offset_top = 526.0
+offset_right = 348.0
+offset_bottom = 550.0
+theme_override_fonts/font = ExtResource("3_mg60w")
+text = "Reset"

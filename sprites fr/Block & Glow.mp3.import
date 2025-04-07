@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://r4jbbb4rarj1"
+path="res://.godot/imported/Block & Glow.mp3-e295ebea2fe2a026d0ba071860789875.mp3str"
+
+[deps]
+
+source_file="res://sprites fr/Block & Glow.mp3"
+dest_files=["res://.godot/imported/Block & Glow.mp3-e295ebea2fe2a026d0ba071860789875.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
