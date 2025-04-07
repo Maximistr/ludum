@@ -1,11 +1,10 @@
-[gd_scene load_steps=7 format=4 uid="uid://c5hmjk428dign"]
+[gd_scene load_steps=6 format=4 uid="uid://c5hmjk428dign"]
 
 [ext_resource type="PackedScene" uid="uid://dbr4h0keagch5" path="res://assetc/M.sides.tscn" id="1_2x26b"]
 [ext_resource type="PackedScene" uid="uid://ce52prsg1ikcx" path="res://assetc/spike.tscn" id="2_l0ml2"]
 [ext_resource type="PackedScene" uid="uid://da6f08khtbfro" path="res://assetc/green_jelly.tscn" id="3_tfit3"]
 [ext_resource type="PackedScene" uid="uid://bhrhjx15evvh6" path="res://assetc/pink_jelly.tscn" id="4_us5l1"]
 [ext_resource type="PackedScene" uid="uid://4h7boi23c677" path="res://assetc/title_card_jellyfish.tscn" id="5_us5l1"]
-[ext_resource type="PackedScene" uid="uid://dkky68h3g8f4h" path="res://slime.tscn" id="6_ixasu"]
 
 [node name="Node" type="Node"]
 
@@ -172,99 +171,6 @@ position = Vector2(651, 1472)
 
 [node name="PinkJelly7" parent="963" instance=ExtResource("4_us5l1")]
 position = Vector2(693, 1389)
-
-[node name="Slime" parent="." instance=ExtResource("6_ixasu")]
-position = Vector2(477, 1511)
-
-[node name="spike" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(292, 1719)
-
-[node name="spike2" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(329, 1718)
-
-[node name="spike3" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(358, 1720)
-
-[node name="spike4" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(395, 1719)
-
-[node name="spike5" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(422, 1718)
-
-[node name="spike6" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(459, 1717)
-
-[node name="spike7" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(488, 1719)
-
-[node name="spike17" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(66, 1716)
-
-[node name="spike18" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(103, 1715)
-
-[node name="spike19" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(132, 1717)
-
-[node name="spike20" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(169, 1716)
-
-[node name="spike21" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(196, 1715)
-
-[node name="spike22" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(233, 1714)
-
-[node name="spike23" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(262, 1716)
-
-[node name="spike24" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(811, 1722)
-
-[node name="spike25" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(848, 1721)
-
-[node name="spike26" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(877, 1723)
-
-[node name="spike27" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(914, 1722)
-
-[node name="spike28" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(941, 1721)
-
-[node name="spike29" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(978, 1720)
-
-[node name="spike30" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(1007, 1722)
-
-[node name="spike8" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(525, 1718)
-
-[node name="spike9" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(549, 1716)
-
-[node name="spike10" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(586, 1715)
-
-[node name="spike11" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(615, 1717)
-
-[node name="spike12" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(652, 1716)
-
-[node name="spike13" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(679, 1715)
-
-[node name="spike14" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(716, 1714)
-
-[node name="spike15" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(745, 1716)
-
-[node name="spike16" parent="." instance=ExtResource("2_l0ml2")]
-position = Vector2(782, 1715)
 
 [node name="PinkJelly" parent="." instance=ExtResource("4_us5l1")]
 position = Vector2(555, 1364)

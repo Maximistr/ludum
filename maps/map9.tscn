@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=4 uid="uid://c6jtijai7y6yt"]
+[gd_scene load_steps=6 format=4 uid="uid://c6jtijai7y6yt"]
 
 [ext_resource type="PackedScene" uid="uid://ce52prsg1ikcx" path="res://assetc/spike.tscn" id="1_rv7jw"]
 [ext_resource type="PackedScene" uid="uid://dbr4h0keagch5" path="res://assetc/M.sides.tscn" id="2_m6m5b"]
 [ext_resource type="PackedScene" uid="uid://bhrhjx15evvh6" path="res://assetc/pink_jelly.tscn" id="3_vv3xu"]
 [ext_resource type="PackedScene" uid="uid://4h7boi23c677" path="res://assetc/title_card_jellyfish.tscn" id="4_pfjfy"]
-[ext_resource type="PackedScene" uid="uid://dkky68h3g8f4h" path="res://slime.tscn" id="5_pfjfy"]
 [ext_resource type="PackedScene" uid="uid://da6f08khtbfro" path="res://assetc/green_jelly.tscn" id="6_5ainl"]
 
 [node name="Node" type="Node"]
@@ -149,17 +148,11 @@ position = Vector2(523, 231)
 [node name="PinkJelly" parent="." instance=ExtResource("3_vv3xu")]
 position = Vector2(396, 1533)
 
-[node name="PinkJelly2" parent="." instance=ExtResource("3_vv3xu")]
-position = Vector2(522, 1629)
-
 [node name="PinkJelly3" parent="." instance=ExtResource("3_vv3xu")]
 position = Vector2(360, 1457)
 
 [node name="title_card_jellyfish" parent="." instance=ExtResource("4_pfjfy")]
 position = Vector2(459, 1330)
-
-[node name="Slime" parent="." instance=ExtResource("5_pfjfy")]
-position = Vector2(522, 1539)
 
 [node name="PinkJelly4" parent="." instance=ExtResource("3_vv3xu")]
 position = Vector2(658, 1277)

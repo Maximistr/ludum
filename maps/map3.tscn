@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=4 uid="uid://c1skph3gq45u2"]
+[gd_scene load_steps=4 format=4 uid="uid://c1skph3gq45u2"]
 
 [ext_resource type="PackedScene" uid="uid://dbr4h0keagch5" path="res://assetc/M.sides.tscn" id="1_i12de"]
 [ext_resource type="PackedScene" uid="uid://ce52prsg1ikcx" path="res://assetc/spike.tscn" id="2_i1k61"]
-[ext_resource type="PackedScene" uid="uid://dkky68h3g8f4h" path="res://slime.tscn" id="3_4tds2"]
 [ext_resource type="PackedScene" uid="uid://bhrhjx15evvh6" path="res://assetc/pink_jelly.tscn" id="4_ps52c"]
 
 [node name="Node" type="Node"]
@@ -212,9 +211,6 @@ rotation = -1.5708
 [node name="spike65" parent="skipers" instance=ExtResource("2_i1k61")]
 position = Vector2(426, 131)
 rotation = -1.5708
-
-[node name="Slime" parent="skipers" instance=ExtResource("3_4tds2")]
-position = Vector2(558, 1515)
 
 [node name="high_score" type="Label" parent="."]
 anchors_preset = -1
