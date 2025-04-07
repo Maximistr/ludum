@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://0luqa4vjqobq"]
+[gd_scene load_steps=17 format=4 uid="uid://0luqa4vjqobq"]
 
 [ext_resource type="Script" uid="uid://caq71qrdyrj3h" path="res://maps/main.gd" id="1_mg60w"]
 [ext_resource type="Texture2D" uid="uid://dpat82casik77" path="res://sprites fr/Gray_Tile_Terrain (16 x 16).png" id="1_nsuab"]
@@ -7,6 +7,10 @@
 [ext_resource type="PackedScene" uid="uid://dkky68h3g8f4h" path="res://slime.tscn" id="4_72qrf"]
 [ext_resource type="Script" uid="uid://b8mt5ik1b6pg4" path="res://scripts/spike.gd" id="6_xo82f"]
 [ext_resource type="Texture2D" uid="uid://cmtwq6l07wt1e" path="res://sprites fr/target.png" id="7_3oufs"]
+[ext_resource type="PackedScene" uid="uid://bhrhjx15evvh6" path="res://assetc/pink_jelly.tscn" id="8_masfp"]
+[ext_resource type="PackedScene" uid="uid://da6f08khtbfro" path="res://assetc/green_jelly.tscn" id="9_uhsqs"]
+[ext_resource type="PackedScene" uid="uid://4h7boi23c677" path="res://assetc/title_card_jellyfish.tscn" id="10_y6crx"]
+[ext_resource type="PackedScene" uid="uid://ce52prsg1ikcx" path="res://assetc/spike.tscn" id="11_34pwa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oduwx"]
 texture = ExtResource("1_nsuab")
@@ -389,3 +393,15 @@ texture = ExtResource("7_3oufs")
 
 [node name="base_height" type="Node2D" parent="."]
 position = Vector2(572, 576)
+
+[node name="PinkJelly" parent="." instance=ExtResource("8_masfp")]
+position = Vector2(696, 538)
+
+[node name="GreenJelly" parent="." instance=ExtResource("9_uhsqs")]
+position = Vector2(732, 467)
+
+[node name="title_card_jellyfish" parent="." instance=ExtResource("10_y6crx")]
+position = Vector2(302, 543)
+
+[node name="spike2" parent="." instance=ExtResource("11_34pwa")]
+position = Vector2(792, 547)
