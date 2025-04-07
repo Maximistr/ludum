@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://ce52prsg1ikcx" path="res://assetc/spike.tscn" id="1_rv7jw"]
 [ext_resource type="PackedScene" uid="uid://dbr4h0keagch5" path="res://assetc/M.sides.tscn" id="2_m6m5b"]
 
-[node name="Node" type="Node"]
+[node name="Node3" type="Node"]
 
 [node name="12_20" type="Node" parent="."]
 
