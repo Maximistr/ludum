@@ -1,0 +1,144 @@
+[gd_scene load_steps=6 format=3 uid="uid://cla1xmhhlpx2p"]
+
+[ext_resource type="Texture2D" uid="uid://cgteshrvrfcsm" path="res://buttons/button1.png" id="1_62e2m"]
+[ext_resource type="Script" uid="uid://007klb7gdr44" path="res://control.gd" id="1_ee4bf"]
+[ext_resource type="Texture2D" uid="uid://c800wdg7j3dcm" path="res://sprites fr/menu_background.png" id="1_qtu10"]
+[ext_resource type="FontFile" uid="uid://cm454ub4wclsn" path="res://sprites fr/Daydream.ttf" id="2_qtu10"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ee4bf"]
+texture = ExtResource("1_qtu10")
+modulate_color = Color(0.741385, 0.741385, 0.741385, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ee4bf")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ee4bf")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -132.5
+offset_top = 55.0
+offset_right = 132.5
+offset_bottom = 207.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_qtu10")
+theme_override_font_sizes/font_size = 35
+text = "Slime jumper"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -195.0
+offset_top = -89.0
+offset_right = 194.0
+offset_bottom = 89.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_62e2m")
+
+[node name="Button" type="Button" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -172.5
+offset_top = -45.0
+offset_right = 170.5
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_qtu10")
+theme_override_font_sizes/font_size = 30
+text = "Start game"
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.708
+anchor_right = 0.5
+anchor_bottom = 0.708
+offset_left = -176.0
+offset_top = -109.784
+offset_right = 175.0
+offset_bottom = 68.216
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_62e2m")
+
+[node name="Button" type="Button" parent="TextureRect2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -154.5
+offset_top = -52.0
+offset_right = 154.5
+offset_bottom = 39.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_qtu10")
+theme_override_font_sizes/font_size = 30
+text = "settings"
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -175.0
+offset_top = 139.0
+offset_right = 176.0
+offset_bottom = 317.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_62e2m")
+
+[node name="Button" type="Button" parent="TextureRect3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -154.5
+offset_top = -52.0
+offset_right = 153.5
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_qtu10")
+theme_override_font_sizes/font_size = 30
+text = "exit game"
+
+[connection signal="pressed" from="TextureRect/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="TextureRect2/Button" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="TextureRect3/Button" to="." method="_on_exit_pressed"]

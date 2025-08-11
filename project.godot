@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="slime jumper"
-run/main_scene="uid://0luqa4vjqobq"
+run/main_scene="uid://cla1xmhhlpx2p"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 boot_splash/image="uid://do4esyxtvd13y"
 config/icon="uid://do4esyxtvd13y"

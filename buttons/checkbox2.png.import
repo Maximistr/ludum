@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://do4esyxtvd13y"
-path="res://.godot/imported/Snímek obrazovky 2025-04-07 191222.png-f8e29ffbf755d3065fe5ebce380a2d85.ctex"
+uid="uid://c7x7fdq78v8tj"
+path="res://.godot/imported/checkbox2.png-268d643c8c3fd96ab1e4a15101fe2e3d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites fr/Snímek obrazovky 2025-04-07 191222.png"
-dest_files=["res://.godot/imported/Snímek obrazovky 2025-04-07 191222.png-f8e29ffbf755d3065fe5ebce380a2d85.ctex"]
+source_file="res://buttons/checkbox2.png"
+dest_files=["res://.godot/imported/checkbox2.png-268d643c8c3fd96ab1e4a15101fe2e3d.ctex"]
 
 [params]
 

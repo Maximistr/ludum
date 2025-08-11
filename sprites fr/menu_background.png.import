@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c40cx12bsyf37"
-path="res://.godot/imported/obrázek_2025-04-05_134238607-removebg-preview.png-8be7de41dc317b6f9d2ed6c4b80bd73c.ctex"
+uid="uid://c800wdg7j3dcm"
+path="res://.godot/imported/menu_background.png-1275c91151b9934a50b5ed8a3ac5b535.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites fr/obrázek_2025-04-05_134238607-removebg-preview.png"
-dest_files=["res://.godot/imported/obrázek_2025-04-05_134238607-removebg-preview.png-8be7de41dc317b6f9d2ed6c4b80bd73c.ctex"]
+source_file="res://sprites fr/menu_background.png"
+dest_files=["res://.godot/imported/menu_background.png-1275c91151b9934a50b5ed8a3ac5b535.ctex"]
 
 [params]
 
