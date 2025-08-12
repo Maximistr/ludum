@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://0luqa4vjqobq"]
+[gd_scene load_steps=17 format=4 uid="uid://0luqa4vjqobq"]
 
 [ext_resource type="Script" uid="uid://caq71qrdyrj3h" path="res://maps/main.gd" id="1_mg60w"]
 [ext_resource type="Texture2D" uid="uid://dpat82casik77" path="res://sprites fr/Gray_Tile_Terrain (16 x 16).png" id="1_nsuab"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bhrhjx15evvh6" path="res://assetc/pink_jelly.tscn" id="8_qt0it"]
 [ext_resource type="PackedScene" uid="uid://ce52prsg1ikcx" path="res://assetc/spike.tscn" id="9_ofrm6"]
 [ext_resource type="Texture2D" uid="uid://cgteshrvrfcsm" path="res://buttons/button1.png" id="10_kppq5"]
+[ext_resource type="AudioStream" uid="uid://b722r7eoc6nte" path="res://music/in game music.mp3" id="11_masfp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oduwx"]
 texture = ExtResource("1_nsuab")
@@ -460,5 +461,9 @@ offset_right = 227.856
 offset_bottom = -217.312
 theme_override_fonts/font = ExtResource("3_mg60w")
 text = "Pause"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_masfp")
+autoplay = true
 
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_esc_pressed"]

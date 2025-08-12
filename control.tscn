@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cla1xmhhlpx2p"]
+[gd_scene load_steps=7 format=3 uid="uid://cla1xmhhlpx2p"]
 
 [ext_resource type="Texture2D" uid="uid://cgteshrvrfcsm" path="res://buttons/button1.png" id="1_62e2m"]
 [ext_resource type="Script" uid="uid://007klb7gdr44" path="res://control.gd" id="1_ee4bf"]
 [ext_resource type="Texture2D" uid="uid://c800wdg7j3dcm" path="res://sprites fr/menu_background.png" id="1_qtu10"]
 [ext_resource type="FontFile" uid="uid://cm454ub4wclsn" path="res://sprites fr/Daydream.ttf" id="2_qtu10"]
+[ext_resource type="AudioStream" uid="uid://gdo556mpjjlk" path="res://music/menu music.mp3" id="5_kbped"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ee4bf"]
 texture = ExtResource("1_qtu10")
@@ -138,6 +139,10 @@ grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_qtu10")
 theme_override_font_sizes/font_size = 30
 text = "exit game"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_kbped")
+autoplay = true
 
 [connection signal="pressed" from="TextureRect/Button" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="TextureRect2/Button" to="." method="_on_settings_pressed"]
