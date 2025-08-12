@@ -42,3 +42,7 @@ func create_lvl():
 	var new_level = random_scene.instantiate()
 	new_level.position = $Level_spawner.position
 	add_child(new_level)
+
+
+func _on_esc_pressed() -> void:
+	get_tree().change_scene_to_file("res://control.tscn")
