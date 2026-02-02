@@ -12,7 +12,7 @@ config_version=5
 
 config/name="slime jumper"
 run/main_scene="uid://cla1xmhhlpx2p"
-config/features=PackedStringArray("4.4", "GL Compatibility")
+config/features=PackedStringArray("4.5", "GL Compatibility")
 boot_splash/image="uid://do4esyxtvd13y"
 config/icon="uid://do4esyxtvd13y"
 <<<<<<<HEADrun/main_scene="res://jellyfishes/green_jelly.tscn"
