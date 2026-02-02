@@ -112,7 +112,7 @@ size = Vector2(11, 0)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lbe0s"]
 size = Vector2(9, 1.5)
 
-[node name="GreenJelly" type="CharacterBody2D"]
+[node name="GreenJelly" type="CharacterBody2D" groups=["jellies"]]
 scale = Vector2(3, 3)
 script = ExtResource("1_vflxx")
 metadata/_edit_vertical_guides_ = [-900.0, 277.0]

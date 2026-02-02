@@ -106,7 +106,7 @@ size = Vector2(7, 9)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yo0j8"]
 size = Vector2(9, 0)
 
-[node name="PinkJelly" type="CharacterBody2D"]
+[node name="PinkJelly" type="CharacterBody2D" groups=["jellies"]]
 position = Vector2(2, 0)
 scale = Vector2(3, 3)
 script = ExtResource("1_3gx06")

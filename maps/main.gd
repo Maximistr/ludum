@@ -19,21 +19,38 @@ var height
 
 func _ready() -> void:
 	BackgroundMusic.play_game_music()
+	for jelly in get_tree().get_nodes_in_group("jellies"):
+		pass # Group is already defined in scene or we can add it here
 	$TextureRect/high_score.text = "HIGHSCORE\n" + "\n" + str(Vars.max_height) + " m"
 	for i in 2:
 		create_lvl()
 
 func _process(delta: float) -> void:
-	height = ceil(($base_height.position.y - $Slime.position.y) / 64)
+	var target_slime = get_node_or_null("Slime")
+	
+	# If no player slime, try to find the highest AI slime
+	if not target_slime:
+		var best_y = 999999.0
+		for brain in get_children():
+			if brain.has_method("setup") and is_instance_valid(brain.slime):
+				if brain.slime.position.y < best_y:
+					best_y = brain.slime.position.y
+					target_slime = brain.slime
+	
+	if not target_slime:
+		return
+
+	height = ceil(($base_height.position.y - target_slime.position.y) / 64)
 	if height > Vars.max_height:
 		Vars.max_height = height
-	$Slime/Label.text = str(snapped(height, 1)) + " m"
-	if $Slime.position.y <= $"lvl summon".position.y:
+	
+	if target_slime.has_node("Label"):
+		target_slime.get_node("Label").text = str(snapped(height, 1)) + " m"
+		
+	if target_slime.position.y <= $"lvl summon".position.y:
 		for i in 2:
 			create_lvl()
 		$"lvl summon".position.y -= 3200
-		
-	print($Slime/Camera2D.global_position)
 
 func create_lvl():
 	$Level_spawner.position.y -= 1600
