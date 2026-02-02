@@ -462,8 +462,5 @@ offset_bottom = -217.312
 theme_override_fonts/font = ExtResource("3_mg60w")
 text = "Pause"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("11_masfp")
-autoplay = true
 
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_esc_pressed"]

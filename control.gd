@@ -3,6 +3,7 @@ extends Control
 @onready var main_menu: Control = $main_menu
 
 func _ready():
+	BackgroundMusic.play_menu_music()
 	main_menu.visible = true
 	settings.visible = false
 

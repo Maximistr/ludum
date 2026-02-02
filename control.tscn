@@ -53,9 +53,6 @@ text = "Slime jumper"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_kbped")
-autoplay = true
 
 [node name="settings" type="Panel" parent="."]
 layout_mode = 1

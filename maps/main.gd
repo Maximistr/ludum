@@ -18,6 +18,7 @@ extends Node
 var height
 
 func _ready() -> void:
+	BackgroundMusic.play_game_music()
 	$TextureRect/high_score.text = "HIGHSCORE\n" + "\n" + str(Vars.max_height) + " m"
 	for i in 2:
 		create_lvl()
