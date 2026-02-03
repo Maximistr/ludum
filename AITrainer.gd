@@ -17,28 +17,28 @@ func _spawn_generation():
 		if child is Node2D:
 			child.queue_free()
 	
-	# Instantiate a single game world for all slimes to compete in
-	var game_instance = game_scene.instantiate()
-	# Remove the default player slime from the game instance
-	var player_slime = game_instance.get_node_or_null("Slime")
-	if player_slime:
-		player_slime.queue_free()
-	
-	# Hide player UI
-	var label = game_instance.get_node_or_null("Label")
-	if label: label.visible = false
-	var canvas = game_instance.get_node_or_null("CanvasLayer")
-	if canvas: canvas.visible = false
-	
-	add_child(game_instance)
-	
 	$CanvasLayer/Label.text = "Generation: " + str(generation)
 	current_brains.clear()
 	
 	for i in range(population_size):
+		# Instantiate a private game world for each slime
+		var game_instance = game_scene.instantiate()
+		game_instance.position = Vector2(i * 2000, 0) # Offset to isolate
+		add_child(game_instance)
+		
+		# Remove the default player slime
+		var player_slime = game_instance.get_node_or_null("Slime")
+		if player_slime: player_slime.queue_free()
+		
+		# Hide UI in sub-instances
+		var label = game_instance.get_node_or_null("Label")
+		if label: label.visible = false
+		var canvas = game_instance.get_node_or_null("CanvasLayer")
+		if canvas: canvas.visible = false
+		
 		var nn: NeuralNetwork
 		if best_networks.is_empty():
-			nn = NeuralNetwork.new([6, 16, 8, 3])
+			nn = NeuralNetwork.new([10, 16, 8, 3])
 		else:
 			if i < 3: # Elitism: keep best 3
 				nn = best_networks[i].duplicate_network()

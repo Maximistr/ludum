@@ -390,7 +390,7 @@ color = Color(0.154876, 0.154876, 0.154876, 1)
 [node name="Level_spawner" type="Node2D" parent="."]
 position = Vector2(64, 0)
 
-[node name="start_jump" type="Area2D" parent="."]
+[node name="start_jump" type="Area2D" parent="." groups=["start_targets"]]
 position = Vector2(612, 647)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="start_jump"]

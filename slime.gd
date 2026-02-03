@@ -11,6 +11,7 @@ var can_atk = true
 var ai_input = false
 var ai_direction = 0.0
 var jelly_hits = 0
+var perfect_target_hits = 0
 
 func _ready() -> void:
 	if is_ai:
@@ -62,13 +63,14 @@ func _physics_process(delta: float) -> void:
 		$"atk cooldown".start()
 		$attack.play("default")
 		
-	if $early.has_overlapping_areas() == true:
+	if $early.has_overlapping_areas():
 		hit_val = 1
-	if  $crit.has_overlapping_areas() == true:
-		hit_val = 2
-	if $late.has_overlapping_areas() == true:
+	if $late.has_overlapping_areas():
 		hit_val = 3
-	if $early.has_overlapping_areas() == false and $crit.has_overlapping_areas() == false and $late.has_overlapping_areas() == false:
+	if $crit.has_overlapping_areas(): # CRIT is best, prioritize it
+		hit_val = 2
+	
+	if not ($early.has_overlapping_areas() or $crit.has_overlapping_areas() or $late.has_overlapping_areas()):
 		hit_val = 0
 		
 		
@@ -79,6 +81,11 @@ func _physics_process(delta: float) -> void:
 		$"atk cooldown".stop()
 		if hit_val == 2:
 			velocity.y += JUMP_VELOCITY * 1.2
+			# Check if we hit the starting target perfectly
+			for area in $crit.get_overlapping_areas():
+				if area.is_in_group("start_targets"):
+					perfect_target_hits += 1
+					break
 		else:
 			velocity.y += JUMP_VELOCITY
 		hit_val = 0
