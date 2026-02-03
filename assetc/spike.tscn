@@ -1,14 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://ce52prsg1ikcx"]
+[gd_scene load_steps=4 format=3 uid="uid://ce52prsg1ikcx"]
 
 [ext_resource type="Script" uid="uid://b8mt5ik1b6pg4" path="res://scripts/spike.gd" id="1_mmppg"]
 [ext_resource type="Texture2D" uid="uid://dbyvaa2quhcnr" path="res://sprites fr/16-bit-spike-Sheet.png" id="2_fnx34"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_njafj"]
-radius = 3.5
-height = 12.0
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_43q6s"]
-size = Vector2(14, 5)
+size = Vector2(8, 8)
 
 [node name="spike" type="Area2D"]
 scale = Vector2(2, 2)
@@ -23,12 +19,8 @@ expand_mode = 1
 stretch_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(8, 10)
-shape = SubResource("CapsuleShape2D_njafj")
-
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(8, 13.5)
+position = Vector2(8, 12)
 shape = SubResource("RectangleShape2D_43q6s")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
