@@ -1,10 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://cla1xmhhlpx2p"]
+[gd_scene format=3 uid="uid://cla1xmhhlpx2p"]
 
 [ext_resource type="Texture2D" uid="uid://cgteshrvrfcsm" path="res://buttons/button1.png" id="1_62e2m"]
 [ext_resource type="Script" uid="uid://007klb7gdr44" path="res://control.gd" id="1_ee4bf"]
 [ext_resource type="Texture2D" uid="uid://c800wdg7j3dcm" path="res://sprites fr/menu_background.png" id="1_qtu10"]
 [ext_resource type="FontFile" uid="uid://cm454ub4wclsn" path="res://sprites fr/Daydream.ttf" id="2_qtu10"]
-[ext_resource type="AudioStream" uid="uid://gdo556mpjjlk" path="res://music/menu music.mp3" id="5_kbped"]
 [ext_resource type="Texture2D" uid="uid://cjl0vlpy0ovme" path="res://obrázek_2025-08-13_123801937-removebg-preview.png" id="6_fj5cn"]
 [ext_resource type="Script" uid="uid://c0sdk0ha1qsgn" path="res://audio_slider.gd" id="7_iy58a"]
 
@@ -19,7 +18,7 @@ thickness = 14
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_fj5cn"]
 color = Color(0.219608, 0.392157, 0.298039, 1)
 
-[node name="Control" type="Control"]
+[node name="Control" type="Control" unique_id=605007659]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -28,7 +27,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ee4bf")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Panel" type="Panel" parent="." unique_id=958835269]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -37,7 +36,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_ee4bf")
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=1046792347]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -53,8 +52,7 @@ text = "Slime jumper"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-
-[node name="settings" type="Panel" parent="."]
+[node name="settings" type="Panel" parent="." unique_id=1081321541]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -64,11 +62,11 @@ anchor_bottom = 0.5
 offset_left = -187.0
 offset_top = -156.0
 offset_right = 188.0
-offset_bottom = 287.0
+offset_bottom = 387.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="settings"]
+[node name="Label" type="Label" parent="settings" unique_id=1510588559]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -83,22 +81,22 @@ theme_override_font_sizes/font_size = 30
 text = "options"
 horizontal_alignment = 1
 
-[node name="TextureRect4" type="TextureRect" parent="settings"]
+[node name="TextureRect4" type="TextureRect" parent="settings" unique_id=907386620]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -175.5
-offset_top = 73.5
-offset_right = 175.5
-offset_bottom = 251.5
+offset_left = -185.5
+offset_top = 47.5
+offset_right = 165.5
+offset_bottom = 225.5
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_62e2m")
 
-[node name="back" type="Button" parent="settings/TextureRect4"]
+[node name="back" type="Button" parent="settings/TextureRect4" unique_id=252675327]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -115,7 +113,7 @@ theme_override_fonts/font = ExtResource("2_qtu10")
 theme_override_font_sizes/font_size = 30
 text = "back"
 
-[node name="audio_slider" type="HSlider" parent="settings"]
+[node name="audio_slider" type="HSlider" parent="settings" unique_id=1519088585]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -140,7 +138,7 @@ value = 1.0
 script = ExtResource("7_iy58a")
 audio_bus_name = "Master"
 
-[node name="Label2" type="Label" parent="settings"]
+[node name="Label2" type="Label" parent="settings" unique_id=1967157311]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -154,12 +152,45 @@ theme_override_fonts/font = ExtResource("2_qtu10")
 text = "Master volume"
 horizontal_alignment = 1
 
-[node name="main_menu" type="Control" parent="."]
+[node name="TextureRect5" type="TextureRect" parent="settings" unique_id=1379246859]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -185.5
+offset_top = -65.5
+offset_right = 165.5
+offset_bottom = 112.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_62e2m")
+
+[node name="fullscreen" type="Button" parent="settings/TextureRect5" unique_id=1565588471]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -154.5
+offset_top = -52.0
+offset_right = 153.5
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_qtu10")
+theme_override_font_sizes/font_size = 30
+text = "fullscreen"
+
+[node name="main_menu" type="Control" parent="." unique_id=996881280]
+visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="TextureRect" type="TextureRect" parent="main_menu"]
+[node name="TextureRect" type="TextureRect" parent="main_menu" unique_id=1857871548]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -174,7 +205,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_62e2m")
 
-[node name="start" type="Button" parent="main_menu/TextureRect"]
+[node name="start" type="Button" parent="main_menu/TextureRect" unique_id=1972021990]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -191,7 +222,7 @@ theme_override_fonts/font = ExtResource("2_qtu10")
 theme_override_font_sizes/font_size = 30
 text = "Start game"
 
-[node name="TextureRect2" type="TextureRect" parent="main_menu"]
+[node name="TextureRect2" type="TextureRect" parent="main_menu" unique_id=1979961882]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -206,7 +237,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_62e2m")
 
-[node name="settings" type="Button" parent="main_menu/TextureRect2"]
+[node name="settings" type="Button" parent="main_menu/TextureRect2" unique_id=373666819]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -223,7 +254,7 @@ theme_override_fonts/font = ExtResource("2_qtu10")
 theme_override_font_sizes/font_size = 30
 text = "settings"
 
-[node name="TextureRect3" type="TextureRect" parent="main_menu"]
+[node name="TextureRect3" type="TextureRect" parent="main_menu" unique_id=1706126245]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -238,7 +269,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_62e2m")
 
-[node name="exit" type="Button" parent="main_menu/TextureRect3"]
+[node name="exit" type="Button" parent="main_menu/TextureRect3" unique_id=1587430897]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -257,6 +288,7 @@ text = "exit game"
 
 [connection signal="pressed" from="settings/TextureRect4/back" to="." method="_on_back_pressed"]
 [connection signal="value_changed" from="settings/audio_slider" to="settings/audio_slider" method="_on_value_changed"]
+[connection signal="pressed" from="settings/TextureRect5/fullscreen" to="." method="_on_fullscreen_pressed"]
 [connection signal="pressed" from="main_menu/TextureRect/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="main_menu/TextureRect2/settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="main_menu/TextureRect3/exit" to="." method="_on_exit_pressed"]
